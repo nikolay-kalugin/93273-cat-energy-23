@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,56 @@
   <link rel="apple-touch-icon" href="img/favicon_32.svg" />
 </head>
 
-<body>
+<body class="page__body">
+
+  <!-- HEADER -->
+  <header class="page-header">
+
+    <!-- Logo -->
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logo-mobile.svg" width="33" height="37" alt="Лого Кэт энерджи">
+    </a>
+
+    <!-- Logo_2 -->
+    <a class="page-header__logo-2" href="index.html">
+      <img src="img/logo_2.svg" width="101" height="18" alt="Лого 2 Кэт энерджи">
+    </a>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+
+      <!-- toggler -->
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <!-- menu -->
+      <div class="main-nav__wrapper">
+
+        <!-- site-list -->
+        <ul class="main-nav__list  site-list">
+          <li class="site-list__item  site-list__item--active">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
 
 </body>
 
