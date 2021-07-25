@@ -1,12 +1,324 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" type="image/png" href="img/favicon_16.svg" />
+  <link rel="apple-touch-icon" href="img/favicon_32.svg" />
 
-  </body>
+</head>
+
+<body class="page__body">
+
+  <!-- HEADER -->
+  <header class="page-header">
+
+    <!-- Logo -->
+    <a class="page-header__logo" href="index.html">
+      <img src="img/mobile/logo-mobile.svg" width="33" height="37" alt="Лого-mobile header ICON">
+    </a>
+
+    <!-- Logo_2 -->
+    <a class="page-header__logo-2" href="index.html">
+      <img src="img/mobile/logo_2-mobile.svg" width="101" height="18" alt="Лого-mobile header CAT ENERGY">
+    </a>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+
+      <!-- toggler -->
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <!-- menu -->
+      <div class="main-nav__wrapper">
+
+        <!-- site-list -->
+        <ul class="main-nav__list  site-list">
+          <li class="site-list__item  site-list__item--active">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- MAIN -->
+  <main class="page-main">
+
+
+    <!-- Section "Promo" -->
+    <section class="promo">
+      <div class="promo__wrapper">
+
+        <!-- promo header -->
+        <header class="promo__header">
+
+          <!-- title -->
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+
+          <!-- subtitle -->
+          <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+
+        </header>
+
+        <!-- button -->
+        <a class="promo__button" href="form.html">Подобрать программу</a>
+
+        <!-- image -->
+        <img class="promo__image" src="img/mobile/index-can-mobile_1.svg" width="280" height="270"
+          alt="Изображение-mobile Кэт энерджи">
+
+      </div>
+    </section>
+
+
+    <!-- Section "Goods" -->
+    <section class="goods">
+      <div class="goods__wrapper">
+
+        <!-- promo list -->
+        <ul class="goods__list">
+
+          <!-- catalog SLIM -->
+          <li class="goods__item  promo__item--icon-weight-loss">
+            <h3 class="goods__title">Похудение</h3>
+            <p class="goods__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+              поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <hr class="visually-hidden">
+            <a class="promo__link  promo__item--arrow" href="catalog.html">
+              Каталог SLIM
+            </a>
+          </li>
+
+          <!-- catalog PRO -->
+          <li class="goods__item  promo__item--icon-weight-gain">
+            <h3 class="goods__title">Набор массы</h3>
+            <p class="goods__description">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
+              необходимые мышцы!
+            </p>
+            <hr class="visually-hidden">
+            <a class="goods__link  promo__item--arrow" href="catalog.html">
+              Каталог PRO
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- Section "How-it-works" -->
+    <section class="how-it-works">
+      <div class="how-it-works__wrapper">
+
+        <!-- How-it-works title -->
+        <h2 class="how-it-works__title">Как это работает</h2>
+
+        <!-- How-it-works list -->
+        <ul class="how-it-works__list">
+
+          <!-- item 1 -->
+          <li class="how-it-works__item  how-it-works__item--icon-step-1">
+            <h3 class="how-it-works__item-title">1</h3>
+            <p class="how-it-works__item-description">
+              Функциональное питание содержит только полезные питательные вещества.
+            </p>
+          </li>
+
+          <!-- item 2 -->
+          <li class="how-it-works__item  how-it-works__item--icon-step-2">
+            <h3 class="how-it-works__item-title">2</h3>
+            <p class="how-it-works__item-description">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
+
+          <!-- item 3 -->
+          <li class="how-it-works__item  how-it-works__item--icon-step-3">
+            <h3 class="how-it-works__item-title">3</h3>
+            <p class="how-it-works__item-description">
+              Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
+          </li>
+
+          <!-- item 4 -->
+          <li class="how-it-works__item  how-it-works__item--icon-step-4">
+            <h3 class="how-it-works__item-title">4</h3>
+            <p class="how-it-works__item-description">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            </p>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- Section "Live Example" -->
+    <section class="live-example">
+      <div class="live-example__wrapper">
+
+        <!-- title -->
+        <h2 class="live-example__title">Живой пример</h2>
+
+        <!-- text -->
+        <p class="live-example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+
+        <!-- list -->
+        <dl class="live-example__list">
+
+          <div class="live-example__item">
+            <p class="live-example__number">
+              5 кг<span>Снижение веса</span>
+            </p>
+          </div>
+
+          <div class="live-example__item">
+            <p class="live-example__number">
+              60 дней<span>Затрачено времени</span>
+            </p>
+          </div>
+
+        </dl>
+
+        <!-- subtitle -->
+        <p class="live-example__subtitle">
+          Затраты на питание: 15 000 РУБ.
+        </p>
+
+        <!-- slider -->
+        <div class="slider">
+
+          <!-- image before -->
+          <img class="slider__image  slider__image--before" src="img/cat-fat.png" height="232"
+            alt="Изображение Толстый кот">
+          <!-- image after -->
+          <img class="slider__image  slider__image--after" src="img/cat-skinny.png" height="232"
+            alt="Изображение Худой кот">
+
+          <!-- button -->
+          <div class="slider__controls">
+            <span class="slider__controls-text">Было</span>
+            <input class="slider__controls-slider" type="range" min="0" max="100" step="1" value="50">
+            <span class="slider__controls-text">Стало</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Section "Contacts" -->
+    <section class="contacts">
+      <div class="contacts__wrapper">
+
+        <!-- contacts header -->
+        <header class="contacts__header">
+
+          <!-- title -->
+          <h2 class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
+
+          <!-- subtitle -->
+          <p class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+
+        </header>
+
+        <iframe class="contacts__maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627138202653!5m2!1sru!2sru"
+          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+
+      <!-- Footer Logo -->
+      <div class="page-footer__logo">
+        <img src="img/footer-logo_1.svg" width="128" height="24" alt="Лого footer CAT ENERGY">
+      </div>
+
+      <!-- Footer HR -->
+      <hr class="visually-hidden">
+
+      <!-- Footer Social -->
+      <div class="page-footer__social  social">
+        <ul class="social__list">
+
+          <!-- vk.com -->
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">vkontakte</a>
+          </li>
+
+          <!-- facebook -->
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+          </li>
+
+          <!-- instagram -->
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">instagram</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Footer HR -->
+      <hr class="visually-hidden">
+
+      <!-- Footer Copyright -->
+      <div class="page-footer__copyright  copyright">
+
+        <!-- link text -->
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+
+        <!-- link image -->
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__image" src="img/footer-logo_2.svg" width="27" height="34"
+            alt="Лого footer HTML Academy">
+        </a>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- SCRIPTS -->
+  <script src="js/actions.js"></script>
+
+</body>
+
 </html>
