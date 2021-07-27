@@ -39,6 +39,7 @@
     "node": "^12 || ^14"
   },
   "dependencies": {
+    "editorconfig-cli": "^0.3.0",
     "normalize.css": "^8.0.1"
   }
 }
