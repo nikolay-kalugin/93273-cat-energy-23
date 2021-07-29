@@ -141,17 +141,33 @@
           <fieldset class="form__block-contacts">
             <legend>Контактные данные<br>(владельца кота)</legend>
 
-            <div class="form__input  form__input--icon">
+            <div class="form__input">
+
               <label>E-mail:*
+
                 <input type="email" name="email" required="required" value="kuklachev@gmail.com">
+
+                <div class="form__icon-phone">
+                  <img src="img/icons/icon_email.svg" alt="icon_email">
+                </div>
+
               </label>
+
             </div>
 
-            <div class="form__input  form__input--icon">
+            <div class="form__input">
+
               <label>Телефон:*
+
                 <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="required"
                   value="8-960-900-60-90">
+
+                <div class="form__icon-phone">
+                  <img src="img/icons/icon_phone.svg" alt="icon_phone">
+                </div>
+
               </label>
+
             </div>
 
           </fieldset>
@@ -200,11 +216,14 @@
 
           </fieldset>
 
-          <!--  submit  -->
-          <p class="form__submit"><input type="submit" value="Отправить заяку"></p>
+          <!-- submit -->
+          <input class="form__submit" type="submit" value="Отправить заяку">
 
           <!--  required-fields-text  -->
-          <small class="form__required-fields-text">* — Обязательные поля</small>
+          <div class="form__required-fields-text">
+            <small>* — Обязательные поля</small>
+          </div>
+
 
         </div>
 
@@ -219,7 +238,8 @@
     <div class="page-footer__wrapper">
 
       <!-- Contacts -->
-      <div class="page-footer__contacts contacts">
+      <div class="page-footer__contacts  page-footer__contacts--background-color">
+
         <p class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
         <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
         <iframe class="contacts__maps"
@@ -229,48 +249,54 @@
 
       </div>
 
-      <!-- Logo -->
-      <div class="page-footer__logo">
-        <img src="img/footer-logo_1.svg" width="128" height="24" alt="Лого footer CAT ENERGY">
-      </div>
+      <div class="page-footer__aside">
 
-      <!-- HR -->
+        <!-- Logo -->
+        <div class="page-footer__logo">
+          <img src="img/footer-logo_1.svg" width="128" height="24" alt="Лого footer CAT ENERGY">
+        </div>
 
-      <!-- Social -->
-      <div class="page-footer__social  social">
-        <ul class="social__list">
+        <!-- HR -->
 
-          <!-- vk.com -->
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">vkontakte</a>
-          </li>
+        <!-- Social -->
+        <div class="page-footer__social  social">
+          <ul class="social__list">
 
-          <!-- facebook -->
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
-          </li>
+            <!-- vk.com -->
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">vkontakte</a>
+            </li>
 
-          <!-- instagram -->
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">instagram</a>
-          </li>
+            <!-- facebook -->
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+            </li>
 
-        </ul>
-      </div>
+            <!-- instagram -->
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">instagram</a>
+            </li>
 
-      <!-- HR -->
+          </ul>
+        </div>
 
-      <!-- Copyright -->
-      <div class="page-footer__copyright  copyright">
+        <!-- HR -->
 
-        <!-- link text -->
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <!-- Copyright -->
+        <div class="page-footer__copyright  copyright">
 
-        <!-- link image -->
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__image" src="img/footer-logo_2.svg" width="27" height="34"
-            alt="Лого footer HTML Academy">
-        </a>
+          <!-- link text -->
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+
+          <!-- link image -->
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__image" src="img/footer-logo_2.svg" width="27" height="34"
+              alt="Лого footer HTML Academy">
+          </a>
+
+        </div>
+
+
 
       </div>
 
