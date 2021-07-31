@@ -14,51 +14,59 @@
 
   <!-- HEADER -->
   <header class="page-header">
+    <div class="page-header__wrapper">
 
-    <!-- Logo_1 -->
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logos/header-logo_1.svg" width="33" height="37" alt="header logo-1 mobile">
-    </a>
-
-    <!-- Logo_2 -->
-    <a class="page-header__logo-2" href="index.html">
-      <img src="img/logos/header-logo_2.svg" width="101" height="18" alt="header logo-2 mobile">
-    </a>
-
-    <!-- Navigation -->
-    <nav class="main-nav">
-
-      <!-- toggler -->
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-
-      <!-- menu -->
-      <div class="main-nav__wrapper">
-
-        <!-- list -->
-        <ul class="main-nav__list  site-list">
-          <li class="main-nav__item  main-nav__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-
+      <!-- Logo_1 -->
+      <div class="page-header__logo-1">
+        <a class="page-header__logo-1-link" href="index.html">
+          <img src="img/logos/header-logo_1.svg" width="33" height="37" alt="header logo-1 mobile">
+        </a>
       </div>
 
-    </nav>
+      <!-- Logo_2 -->
+      <div class="page-header__logo-2">
+        <a class="page-header__logo-2-link" href="index.html">
+          <img src="img/logos/header-logo_2.svg" width="101" height="18" alt="header logo-2 mobile">
+        </a>
+      </div>
 
+      <!-- toggler -->
+      <div class="page-header__toggle">
+        <img class="page-header__toggle" src="img/icons/icon_toggler_open.svg" alt="Иконка открыть меню">
+        <img class="page-header__toggle  page-header__toggle--visible-none" src="img/icons/icon_toggler_close.svg"
+          alt="Иконка закрыть меню">
+      </div>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+
+        <!-- menu ВРЕМЕННО СКРЫТО -->
+        <div class="main-nav__wrapper">
+
+          <!-- list -->
+          <ul class="main-nav__list  site-list">
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+    </div>
   </header>
 
 
