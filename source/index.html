@@ -71,10 +71,10 @@
 
   <!-- MAIN -->
   <main class="page-main">
-    <div class="page-main__wrapper">
 
-      <!-- Section "Promo" -->
-      <section class="promo">
+    <!-- Section "Promo" -->
+    <section class="promo">
+      <div class="promo__wrapper">
 
         <!-- promo header -->
         <div class="promo__header">
@@ -97,12 +97,13 @@
         <div class="promo__button">
           <a href="form.html">Подобрать программу</a>
         </div>
+      </div>
+    </section>
 
-      </section>
 
-
-      <!-- Section "Programs" -->
-      <section class="programs">
+    <!-- Section "Programs" -->
+    <section class="programs">
+      <div class="programs__wrapper">
 
         <!-- promo list -->
         <ul class="programs__list">
@@ -113,7 +114,9 @@
             <div class="programs__title">
 
               <div class="programs__title-icon-weight-loss">
-                <img src="img/icons/icon_cat_slim.svg" alt="icon_cat_slim">
+                <!-- <img src="img/icons/icon_ellipse.svg" alt="icon_ellipse"> -->
+                <img class="programs__title-icon-panter_slim" src="img/icons/icon_panter_slim.svg"
+                  alt="icon_panter_slim">
               </div>
 
               <div class="programs__title-text">
@@ -137,7 +140,9 @@
               </div>
 
               <div class="programs__link-arrow">
-                <img src="img/icons/icon_arrow.svg" alt="link-arrow">
+                <a href="catalog.html">
+                  <img src="img/icons/icon_arrow.svg" alt="link-arrow">
+                </a>
               </div>
 
             </div>
@@ -150,7 +155,8 @@
             <div class="programs__title">
 
               <div class="programs__title-icon-weight-gain">
-                <img src="img/icons/icon_cat_pro.svg" alt="icon_cat_pro">
+                <!-- <img src="img/icons/icon_ellipse.svg" alt="icon_ellipse"> -->
+                <img class="programs__title-icon-panter_pro" src="img/icons/icon_panter_pro.svg" alt="icon_panter_pro">
               </div>
 
               <div class="programs__title-text">
@@ -174,7 +180,9 @@
               </div>
 
               <div class="programs__link-arrow">
-                <img src="img/icons/icon_arrow.svg" alt="link-arrow">
+                <a href="catalog.html">
+                  <img src="img/icons/icon_arrow.svg" alt="link-arrow">
+                </a>
               </div>
 
             </div>
@@ -182,12 +190,13 @@
           </li>
 
         </ul>
+      </div>
+    </section>
 
-      </section>
 
-
-      <!-- Section "How-it-works" -->
-      <section class="how-it-works">
+    <!-- Section "How-it-works" -->
+    <section class="how-it-works">
+      <div class="how-it-works__wrapper">
 
         <!-- How-it-works title -->
         <h2 class="how-it-works__title">Как это работает</h2>
@@ -244,83 +253,82 @@
           </li>
 
         </ul>
-
-    </div>
+      </div>
     </section>
 
 
     <!-- Section "Live-Example" -->
     <section class="live-example">
+      <div class="live-example__wrapper">
 
+        <!-- title -->
+        <h2 class="live-example__title">Живой пример</h2>
 
-      <!-- title -->
-      <h2 class="live-example__title">Живой пример</h2>
+        <!-- text -->
+        <p class="live-example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
 
-      <!-- text -->
-      <p class="live-example__text">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
+        <!-- list -->
+        <div class="live-example__list">
 
-      <!-- list -->
-      <div class="live-example__list">
+          <div class="live-example__item">
 
-        <div class="live-example__item">
+            <p class="live-example__number">
+              5 кг
+            </p>
+            <p class="live-example__description">снижение<br>веса</p>
 
-          <p class="live-example__number">
-            5 кг
-          </p>
-          <p class="live-example__description">Снижение веса</p>
+          </div>
+
+          <div class="live-example__item">
+
+            <p class="live-example__number">
+              60 дней
+            </p>
+            <p class="live-example__description">затрачено<br>времени</p>
+
+          </div>
 
         </div>
 
-        <div class="live-example__item">
+        <!-- subtitle -->
+        <p class="live-example__subtitle">
+          Затраты на питание: 15 000 РУБ.
+        </p>
 
-          <p class="live-example__number">
-            60 дней
-          </p>
-          <p class="live-example__description">Затрачено времени</p>
+        <!-- slider -->
+        <div class="slider">
+
+          <!-- image before -->
+          <img class="slider__image  slider__image--before" src="img/slider/cat-fat.png" height="232"
+            alt="Изображение Толстый кот">
+          <!-- image after -->
+          <img class="slider__image  slider__image--after" src="img/slider/cat-skinny.png" height="232"
+            alt="Изображение Худой кот">
+
+          <!-- button -->
+          <div class="slider__controls">
+            <span class="slider__controls-text">Было</span>
+            <input class="slider__controls-slider" type="range" min="0" max="100" step="1" value="50">
+            <span class="slider__controls-text">Стало</span>
+          </div>
 
         </div>
-
       </div>
-
-      <!-- subtitle -->
-      <p class="live-example__subtitle">
-        Затраты на питание: 15 000 РУБ.
-      </p>
-
-      <!-- slider -->
-      <div class="slider">
-
-        <!-- image before -->
-        <img class="slider__image  slider__image--before" src="img/slider/cat-fat.png" height="232"
-          alt="Изображение Толстый кот">
-        <!-- image after -->
-        <img class="slider__image  slider__image--after" src="img/slider/cat-skinny.png" height="232"
-          alt="Изображение Худой кот">
-
-        <!-- button -->
-        <div class="slider__controls">
-          <span class="slider__controls-text">Было</span>
-          <input class="slider__controls-slider" type="range" min="0" max="100" step="1" value="50">
-          <span class="slider__controls-text">Стало</span>
-        </div>
-
-      </div>
-
     </section>
-
 
   </main>
 
 
   <!-- FOOTER -->
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
 
-      <!-- Contacts -->
-      <div class="page-footer__contacts">
+    <!-- Contacts -->
+    <div class="page-footer__contacts">
+
+      <div class="page-footer__contacts-wrapper">
         <div class="page-footer__contacts-title">
           <p>Приглашаем<br>к сотрудничеству<br>дилеров!</p>
         </div>
@@ -329,14 +337,19 @@
         </div>
       </div>
 
-      <div class="page-footer__contacts-maps">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627138202653!5m2!1sru!2sru"
-          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
+    </div>
 
-      <div class="page-footer__aside">
+    <!-- Google Maps-->
+    <div class="page-footer__contacts-maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627138202653!5m2!1sru!2sru"
+        width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Page-footer Aside -->
+    <div class="page-footer__aside">
+      <div class="page-footer__aside-wrapper">
 
         <!-- Logo -->
         <div class="page-footer__logo">
@@ -347,30 +360,30 @@
 
         <!-- Social -->
         <div class="page-footer__social">
-          <ul class="page-footer__social-list">
+          <div class="page-footer__social-list">
 
             <!-- vk.com -->
-            <li class="page-footer__social-item">
+            <div class="page-footer__social-item-vk">
               <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
                 <img src="img/icons/icon_social_vk.svg" alt="vkontakte-icon">
               </a>
-            </li>
+            </div>
 
             <!-- instagram -->
-            <li class="page-footer__social-item">
+            <div class="page-footer__social-item-instagram">
               <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
                 <img src="img/icons/icon_social_instagram.svg" alt="instagram-icon">
               </a>
-            </li>
+            </div>
 
             <!-- facebook -->
-            <li class="page-footer__social-item">
+            <div class="page-footer__social-item-facebook">
               <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
                 <img src="img/icons/icon_social_facebook.svg" alt="facebook-icon">
               </a>
-            </li>
+            </div>
 
-          </ul>
+          </div>
         </div>
 
         <!-- HR -->
@@ -392,8 +405,6 @@
           </div>
 
         </div>
-
-
 
       </div>
 

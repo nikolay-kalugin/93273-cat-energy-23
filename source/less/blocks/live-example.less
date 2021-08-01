@@ -1,6 +1,27 @@
 .live-example {
   background: #eaeaea;
 
+  .live-example__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+
+  .live-example__list {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+  }
+
+  .live-example__item {
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 124px;
+    height: 56px;
+  }
+
   .live-example__title {
     font-family: Oswald_36_normal_400__40;
     color:#000000;
@@ -17,22 +38,35 @@
 
   .live-example__number {
     font-family: Oswald_24_normal_400__24;
+    text-transform: uppercase;
     color:#000000;
+    text-align: center;
   }
 
   .live-example__description {
+    width: 87px;
+    position: relative;
+    top: -4px;
+    left: 18px;
+
+    background: #eaeaea;
+
     font-family: Arial;
     font-size: 12px;
     font-style: normal;
     font-weight: normal;
     line-height: 12px;
     color:#444444;
+
+    text-align: center;
   }
 
   .live-example__subtitle {
     font-family: Oswald_14_normal_400__20;
     text-transform: uppercase;
     color: #000000;
+    text-align: center;
+    padding-top: 20px;
   }
 
 }
