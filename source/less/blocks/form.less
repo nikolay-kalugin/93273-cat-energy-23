@@ -1,10 +1,41 @@
 .form {
   background: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid red;
+
+  .form__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .form__header {
+    box-sizing: border-box;
+    border: 2px solid blue;
+  }
 
   .form__subtitle {
     font-family: Oswald_14_normal_400__18;
     text-transform: uppercase;
     color:#000000;
+    margin-top: -20px;
+  }
+
+  .form__block-name-weight-age {
+    box-sizing: border-box;
+    border: 2px solid blue;
+    margin: 10px 0;
+  }
+
+  .form__block-target {
+    box-sizing: border-box;
+    border: 2px solid blue;
+    margin: 10px 0;
+  }
+
+  .form__block-contacts {
+    box-sizing: border-box;
+    border: 2px solid blue;
+    margin: 10px 0;
   }
 
   .form__label {
@@ -19,25 +50,49 @@
     color:#444444;
   }
 
+  .form__block-comment {
+    box-sizing: border-box;
+    border: 2px solid blue;
+    margin: 10px 0;
+  }
+
   .form__legend {
     font-family: Oswald_24_normal_400__26;
     color:#000000;
   }
 
+  .form__block-additionally {
+    box-sizing: border-box;
+    border: 2px solid blue;
+    margin: 10px 0;
+  }
+
   .form__submit {
+    box-sizing: border-box;
+    border: 2px solid blue;
+    margin: 10px 0;
+  }
+
+  .form__submit-button input {
+    width: 276px;
+    height: 40px;
     background: #68B738;
+    border: none;
     font-family: Oswald_16_normal_400__20;
     text-transform: uppercase;
     color:#ffffff;
+    cursor: pointer;
   }
 
-  .form__required-fields-text small {
+  .form__submit-required-fields-text {
     font-family: Arial;
     font-size: 14px;
     font-style: normal;
     font-weight: normal;
     line-height: 16px;
     color: #000000;
+    text-align: center;
+    margin: 10px 0;
   }
 
 }
