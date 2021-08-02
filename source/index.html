@@ -3,128 +3,193 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" type="image/png" href="img/favicon_16.svg" />
-  <link rel="apple-touch-icon" href="img/favicon_32.svg" />
-
+  <link rel="icon" type="image/png" href="img/favicons/favicon_16.svg" />
+  <link rel="apple-touch-icon" href="img/favicons/favicon_32.svg" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
   <!-- HEADER -->
   <header class="page-header">
+    <div class="page-header__wrapper">
 
-    <!-- Logo -->
-    <a class="page-header__logo" href="index.html">
-      <img src="img/mobile/logo_1-mobile.svg" width="33" height="37" alt="Лого-mobile header ICON">
-    </a>
-
-    <!-- Logo_2 -->
-    <a class="page-header__logo-2" href="index.html">
-      <img src="img/mobile/logo_2-mobile.svg" width="101" height="18" alt="Лого-mobile header CAT ENERGY">
-    </a>
-
-    <!-- Navigation -->
-    <nav class="main-nav">
-
-      <!-- toggler -->
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-
-      <!-- menu -->
-      <div class="main-nav__wrapper">
-
-        <!-- site-list -->
-        <ul class="main-nav__list  site-list">
-          <li class="site-list__item  site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-
+      <!-- Logo_1 -->
+      <div class="page-header__logo-1">
+        <a class="page-header__logo-1-link" href="index.html">
+          <img src="img/logos/header-logo_1.svg" width="33" height="37" alt="header logo-1 mobile">
+        </a>
       </div>
 
-    </nav>
+      <!-- Logo_2 -->
+      <div class="page-header__logo-2">
+        <a class="page-header__logo-2-link" href="index.html">
+          <img src="img/logos/header-logo_2.svg" width="101" height="18" alt="header logo-2 mobile">
+        </a>
+      </div>
 
+      <!-- toggler -->
+      <div class="page-header__toggle">
+        <img class="page-header__toggle" src="img/icons/icon_toggler_open.svg" alt="Иконка открыть меню">
+        <img class="page-header__toggle  page-header__toggle--visible-none" src="img/icons/icon_toggler_close.svg"
+          alt="Иконка закрыть меню">
+      </div>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+
+        <!-- menu ВРЕМЕННО СКРЫТО -->
+        <div class="main-nav__wrapper">
+
+          <!-- list -->
+          <ul class="main-nav__list  site-list">
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+    </div>
   </header>
 
   <!-- MAIN -->
   <main class="page-main">
-
 
     <!-- Section "Promo" -->
     <section class="promo">
       <div class="promo__wrapper">
 
         <!-- promo header -->
-        <header class="promo__header">
+        <div class="promo__header">
 
           <!-- title -->
-          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <h1 class="page-main__title  page-main__title--color">Функциональное<br> питание для котов</h1>
 
           <!-- subtitle -->
           <p class="promo__subtitle">Занялся собой? Займись котом!</p>
 
-        </header>
-
-        <!-- button -->
-        <a class="promo__button" href="form.html">Подобрать программу</a>
+        </div>
 
         <!-- image -->
-        <img class="promo__image" src="img/mobile/index-can-mobile_1.svg" width="280" height="270"
-          alt="Изображение-mobile Кэт энерджи">
+        <div class="promo__image">
+          <img src="img/index-main-image-mobile.png" width="280" height="270"
+            alt="Изображение банка с кошачьим дошираком">
+        </div>
 
+        <!-- button -->
+        <div class="promo__button">
+          <a href="form.html">Подобрать программу</a>
+        </div>
       </div>
     </section>
 
 
-    <!-- Section "Goods" -->
-    <section class="goods">
-      <div class="goods__wrapper">
+    <!-- Section "Programs" -->
+    <section class="programs">
+      <div class="programs__wrapper">
 
         <!-- promo list -->
-        <ul class="goods__list">
+        <ul class="programs__list">
 
           <!-- catalog SLIM -->
-          <li class="goods__item  promo__item--icon-weight-loss">
-            <h3 class="goods__title">Похудение</h3>
-            <p class="goods__description">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
-              поможет вашему питомцу сбросить лишний вес.
-            </p>
-            <hr class="visually-hidden">
-            <a class="promo__link  promo__item--arrow" href="catalog.html">
-              Каталог SLIM
-            </a>
+          <li class="programs__item">
+
+            <div class="programs__title">
+
+              <div class="programs__title-icon-weight-loss">
+                <!-- <img src="img/icons/icon_ellipse.svg" alt="icon_ellipse"> -->
+                <img class="programs__title-icon-panter_slim" src="img/icons/icon_panter_slim.svg"
+                  alt="icon_panter_slim">
+              </div>
+
+              <div class="programs__title-text">
+                <h3>Похудение</h3>
+              </div>
+
+            </div>
+
+            <div class="programs__description">
+              <p>
+                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
+                Slim поможет вашему питомцу сбросить лишний вес.
+              </p>
+            </div>
+
+            <!-- HR -->
+            <div class="programs__link">
+
+              <div class="programs__link-title">
+                <a href="catalog.html">Каталог SLIM</a>
+              </div>
+
+              <div class="programs__link-arrow">
+                <a href="catalog.html">
+                  <img src="img/icons/icon_arrow.svg" alt="link-arrow">
+                </a>
+              </div>
+
+            </div>
+
           </li>
 
           <!-- catalog PRO -->
-          <li class="goods__item  promo__item--icon-weight-gain">
-            <h3 class="goods__title">Набор массы</h3>
-            <p class="goods__description">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
-              необходимые мышцы!
-            </p>
-            <hr class="visually-hidden">
-            <a class="goods__link  promo__item--arrow" href="catalog.html">
-              Каталог PRO
-            </a>
+          <li class="programs__item">
+
+            <div class="programs__title">
+
+              <div class="programs__title-icon-weight-gain">
+                <!-- <img src="img/icons/icon_ellipse.svg" alt="icon_ellipse"> -->
+                <img class="programs__title-icon-panter_pro" src="img/icons/icon_panter_pro.svg" alt="icon_panter_pro">
+              </div>
+
+              <div class="programs__title-text">
+                <h3>Набор массы</h3>
+              </div>
+
+            </div>
+
+            <div class="programs__description">
+              <p>
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
+                нарастить необходимые мышцы!
+              </p>
+            </div>
+
+            <!-- HR -->
+            <div class="programs__link">
+
+              <div class="programs__link-title">
+                <a href="catalog.html">Каталог PRO</a>
+              </div>
+
+              <div class="programs__link-arrow">
+                <a href="catalog.html">
+                  <img src="img/icons/icon_arrow.svg" alt="link-arrow">
+                </a>
+              </div>
+
+            </div>
+
           </li>
 
         </ul>
-
       </div>
     </section>
 
@@ -140,44 +205,59 @@
         <ul class="how-it-works__list">
 
           <!-- item 1 -->
-          <li class="how-it-works__item  how-it-works__item--icon-step-1">
-            <h3 class="how-it-works__item-title">1</h3>
+          <li class="how-it-works__item">
+
+            <div class="how-it-works__item-icon-step-1">
+              <img src="img/icons/how-it-works__icon-step-1.svg">
+            </div>
+
             <p class="how-it-works__item-description">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
 
           <!-- item 2 -->
-          <li class="how-it-works__item  how-it-works__item--icon-step-2">
-            <h3 class="how-it-works__item-title">2</h3>
+          <li class="how-it-works__item">
+
+            <div class="how-it-works__item-icon-step-2">
+              <img src="img/icons/how-it-works__icon-step-2.svg">
+            </div>
+
             <p class="how-it-works__item-description">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
 
           <!-- item 3 -->
-          <li class="how-it-works__item  how-it-works__item--icon-step-3">
-            <h3 class="how-it-works__item-title">3</h3>
+          <li class="how-it-works__item">
+
+            <div class="how-it-works__item-icon-step-3">
+              <img src="img/icons/how-it-works__icon-step-3.svg">
+            </div>
+
             <p class="how-it-works__item-description">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
 
           <!-- item 4 -->
-          <li class="how-it-works__item  how-it-works__item--icon-step-4">
-            <h3 class="how-it-works__item-title">4</h3>
+          <li class="how-it-works__item">
+
+            <div class="how-it-works__item-icon-step-4">
+              <img src="img/icons/how-it-works__icon-step-4.svg">
+            </div>
+
             <p class="how-it-works__item-description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
           </li>
 
         </ul>
-
       </div>
     </section>
 
 
-    <!-- Section "Live Example" -->
+    <!-- Section "Live-Example" -->
     <section class="live-example">
       <div class="live-example__wrapper">
 
@@ -191,21 +271,27 @@
         </p>
 
         <!-- list -->
-        <dl class="live-example__list">
+        <div class="live-example__list">
 
           <div class="live-example__item">
+
             <p class="live-example__number">
-              5 кг<span>Снижение веса</span>
+              5 кг
             </p>
+            <p class="live-example__description">снижение<br>веса</p>
+
           </div>
 
           <div class="live-example__item">
+
             <p class="live-example__number">
-              60 дней<span>Затрачено времени</span>
+              60 дней
             </p>
+            <p class="live-example__description">затрачено<br>времени</p>
+
           </div>
 
-        </dl>
+        </div>
 
         <!-- subtitle -->
         <p class="live-example__subtitle">
@@ -216,10 +302,10 @@
         <div class="slider">
 
           <!-- image before -->
-          <img class="slider__image  slider__image--before" src="img/cat-fat.png" height="232"
+          <img class="slider__image  slider__image--before" src="img/slider/cat-fat.png" height="232"
             alt="Изображение Толстый кот">
           <!-- image after -->
-          <img class="slider__image  slider__image--after" src="img/cat-skinny.png" height="232"
+          <img class="slider__image  slider__image--after" src="img/slider/cat-skinny.png" height="232"
             alt="Изображение Худой кот">
 
           <!-- button -->
@@ -230,7 +316,6 @@
           </div>
 
         </div>
-
       </div>
     </section>
 
@@ -239,63 +324,87 @@
 
   <!-- FOOTER -->
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
 
-      <!-- Contacts -->
-      <div class="page-footer__contacts contacts">
-        <b class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</b>
-        <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
-        <iframe class="contacts__maps"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627138202653!5m2!1sru!2sru"
-          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
+    <!-- Contacts -->
+    <div class="page-footer__contacts">
 
+      <div class="page-footer__contacts-wrapper">
+        <div class="page-footer__contacts-title">
+          <p>Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+        </div>
+        <div class="page-footer__contacts-text">
+          <p>ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        </div>
       </div>
 
-      <!-- Logo -->
-      <div class="page-footer__logo">
-        <img src="img/footer-logo_1.svg" width="128" height="24" alt="Лого footer CAT ENERGY">
-      </div>
+    </div>
 
-      <!-- HR -->
-      <hr class="visually-hidden">
+    <!-- Google Maps-->
+    <div class="page-footer__contacts-maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627138202653!5m2!1sru!2sru"
+        width="312" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
 
-      <!-- Social -->
-      <div class="page-footer__social  social">
-        <ul class="social__list">
+    <!-- Page-footer Aside -->
+    <div class="page-footer__aside">
+      <div class="page-footer__aside-wrapper">
 
-          <!-- vk.com -->
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">vkontakte</a>
-          </li>
+        <!-- Logo -->
+        <div class="page-footer__logo">
+          <img src="img/logos/footer-logo_1.svg" width="128" height="24" alt="footer logo-1 ENERGY">
+        </div>
 
-          <!-- facebook -->
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
-          </li>
+        <!-- HR -->
 
-          <!-- instagram -->
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">instagram</a>
-          </li>
+        <!-- Social -->
+        <div class="page-footer__social">
+          <div class="page-footer__social-list">
 
-        </ul>
-      </div>
+            <!-- vk.com -->
+            <div class="page-footer__social-item-vk">
+              <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
+                <img src="img/icons/icon_social_vk.svg" alt="vkontakte-icon">
+              </a>
+            </div>
 
-      <!-- HR -->
-      <hr class="visually-hidden">
+            <!-- instagram -->
+            <div class="page-footer__social-item-instagram">
+              <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
+                <img src="img/icons/icon_social_instagram.svg" alt="instagram-icon">
+              </a>
+            </div>
 
-      <!-- Copyright -->
-      <div class="page-footer__copyright  copyright">
+            <!-- facebook -->
+            <div class="page-footer__social-item-facebook">
+              <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
+                <img src="img/icons/icon_social_facebook.svg" alt="facebook-icon">
+              </a>
+            </div>
 
-        <!-- link text -->
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </div>
 
-        <!-- link image -->
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__image" src="img/footer-logo_2.svg" width="27" height="34"
-            alt="Лого footer HTML Academy">
-        </a>
+        <!-- HR -->
+
+        <!-- Copyright -->
+        <div class="page-footer__copyright">
+
+          <!-- Copyright link text -->
+          <div class="page-footer__copyright-link-text">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+
+          <!-- Copyright link logo -->
+          <div class="page-footer__copyright-link-logo">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="page-footer__image" src="img/logos/footer-logo_2.svg" width="27" height="34"
+                alt="footer logo-2">
+            </a>
+          </div>
+
+        </div>
 
       </div>
 
@@ -304,7 +413,7 @@
 
 
   <!-- SCRIPTS -->
-  <script src="js/actions.js"></script>
+  <!-- <script src="js/actions.js"></script> -->
 
 </body>
 

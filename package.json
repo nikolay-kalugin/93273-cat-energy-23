@@ -11,8 +11,8 @@
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
     "gulp-sourcemaps": "3.0.0",
-    "postcss": "8.2.8",
-    "stylelint": "13.13.1",
+    "postcss": "^8.3.6",
+    "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "0.1.10"
   },
   "scripts": {
@@ -37,5 +37,9 @@
   ],
   "engines": {
     "node": "^12 || ^14"
+  },
+  "dependencies": {
+    "editorconfig-cli": "^0.3.0",
+    "normalize.css": "^8.0.1"
   }
 }
