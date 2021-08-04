@@ -26,11 +26,11 @@
 
   .programs__title-icon-weight-loss {
     display: flex;
-    align-self:center;
-    background-image: url("../img/icons/icon_ellipse.svg");
-    position: relative;
     width: 50px;
     height: 50px;
+    background-image: url("../img/icons/icon_ellipse.svg");
+    position: relative;
+    align-self:center;
   }
 
   .programs__title-icon-panter_slim {
@@ -43,30 +43,35 @@
 
   .programs__title-icon-weight-gain {
     display: flex;
-    align-self:center;
-    background-image: url("../img/icons/icon_ellipse.svg");
-    position: relative;
     width: 50px;
     height: 50px;
+    background-image: url("../img/icons/icon_ellipse.svg");
+    position: relative;
+    align-self:center;
   }
 
   .programs__title-icon-panter_pro {
-    position: absolute;
     width: 67px;
     height: 28px;
+    position: absolute;
     top: 10px;
     left: -10px;
   }
 
   .programs__title-text {
-    font-family: Oswald_24_normal_400__37;
+    font-family: @base_font_regular;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
     text-transform: uppercase;
     color: #000000;
+
     margin-left: 20px;
   }
 
   .programs__description p {
-    font-family: Arial;
+    font-family: @base_font_regular_second;
     font-size: 14px;
     font-style: normal;
     font-weight: normal;
@@ -85,11 +90,14 @@
   }
 
   .programs__link  a {
-    font-family: Oswald_16_normal_400__16;
     text-decoration: none;
+    font-family: @base_font_regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
     text-transform: uppercase;
     color: #000000;
-
   }
 
 }

@@ -11,6 +11,7 @@
     width: 320px;
     height: 302px;
     margin-left: -20px;
+
     background-blend-mode: multiply;
     background-position: center;
     background-image: url("../img/background-images/index-cat-background.png");
@@ -21,7 +22,11 @@
   }
 
   .promo__subtitle {
-    font-family: Oswald_14_normal_400__14;
+    font-family: @base_font_regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 14px;
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
@@ -34,14 +39,20 @@
   }
 
   .promo__button a {
+    text-decoration: none;
+
     display: flex;
     width: 280px;
     height: 40px;
     background: #68B738;
     align-items: center;
     justify-content: center;
-    font-family: Oswald_14_normal_400__18;
-    text-decoration: none;
+
+    font-family: @base_font_regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
     text-transform: uppercase;
     color: #FFFFFF;
   }
