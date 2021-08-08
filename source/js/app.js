@@ -10,11 +10,9 @@
 
 
 
-    // document.getElementsByClassName("main-nav").classList.add("page__block--show")
+    // document.getElementsByClassName("main-nav").classList.add("page__block--hide")
 
 
   }
 
 });
-
-
