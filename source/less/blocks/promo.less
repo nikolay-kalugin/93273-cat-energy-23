@@ -59,6 +59,9 @@
 
   // Планшетный режим
   @media ( min-width: @tablet-width ) {
+    .promo__wrapper{
+      min-height: 850px;
+    }
 
     .promo__header {
       background-image: none;
@@ -66,8 +69,49 @@
     }
 
     .promo__subtitle {
+      font-family: @base_font_regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
       color: #000000;
 
+      margin-top: 40px;
+      margin-left: -250px;
+    }
+
+    .promo__image {
+      width: 709px;
+      height: 609px;
+      background: url(../img/index-main-image-tablet.png);
+      background-repeat: no-repeat;
+      margin-top: -70px;
+      margin-left: -215px;
+    }
+
+    .promo__image img {
+      display: none;
+    }
+
+    .promo__button {
+      margin-top: 10px;
+      margin-left: 10px;
+      z-index: 100;
+    }
+
+    .promo__button a {
+      font-family: @base_font_regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+
+      width: 244px;
+      height: 54px;
+      position: relative;
+      z-index: 100;
+      margin-top: -585px;
+      margin-left: -130px;
     }
 
   }
