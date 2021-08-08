@@ -24,6 +24,30 @@
     cursor: pointer;
   }
 
+  @media ( min-width: @tablet-width ) {
+    .page-header__wrapper {
+      width: 708px;
+      height: 80px;
+    }
+
+    .page-header__logo-1 {
+      display: none;
+    }
+
+    .page-header__logo-2 {
+      display: none;
+    }
+
+    .page-header__toggle {
+      display: none;
+    }
+
+    // Показываем лого для планшета
+    .page-header__logo-tablet {
+      display: block;
+    }
+
+  }
 
 }
 
