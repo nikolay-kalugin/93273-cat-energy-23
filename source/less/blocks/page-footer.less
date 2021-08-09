@@ -39,9 +39,9 @@
   }
 
   .page-footer__contacts-maps {
-    //margin-bottom: -4px;
     border: 2px solid blue;
     text-align: center;
+    margin: 0 auto;
   }
 
   .page-footer__aside  {
@@ -72,7 +72,7 @@
     display: flex;
     width: 140px;
     height: 20px;
-    align-self: center;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -86,6 +86,13 @@
 
   .page-footer__social-item-facebook {
     height: 18px;
+  }
+
+  .page-footer__social-item-vk,
+  .page-footer__social-item-instagram,
+  .page-footer__social-item-facebook {
+    display: flex;
+    align-items: center;
   }
 
   .page-footer__social-link {
@@ -114,6 +121,82 @@
     font-weight: normal;
     line-height: 18px;
     color: #444444;
+  }
+
+
+  // Планшетный режим
+  @media ( min-width: @tablet-width ) {
+    .page-footer__contacts-wrapper {
+      width: 708px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .page-footer__contacts-title {
+      font-family: @base_font_regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 21px;
+
+      margin-left: 40px;
+    }
+
+    .page-footer__contacts-text {
+      font-family: @base_font_regular_second;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+
+      text-align: right;
+      margin-right: 40px;
+    }
+
+    .page-footer__contacts-text-city {
+      display: block;
+      margin-top: 15px;
+    }
+
+    .page-footer__contacts-maps iframe{
+      width: 100%;
+      height: 400px;
+    }
+
+    // Стили для нижней части footer
+    .page-footer__aside-wrapper {
+      width: 708px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .page-footer__logo,
+    .page-footer__social {
+      border: none;
+    }
+
+    .page-footer__social-item-vk img {
+      width: 29px;
+      height: 17px;
+    }
+
+    .page-footer__social-item-instagram img {
+      width: 23px;
+      height: 23px;
+    }
+
+    .page-footer__social-item-facebook img {
+      width: 13px;
+      height: 27px;
+    }
+
+    .page-footer__copyright-link-text a {
+      padding-right: 20px;
+    }
+
+
   }
 
 }

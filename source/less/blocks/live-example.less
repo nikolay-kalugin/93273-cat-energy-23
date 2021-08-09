@@ -9,20 +9,6 @@
     padding-bottom: 30px;
   }
 
-  .live-example__list {
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-between;
-  }
-
-  .live-example__item {
-    width: 124px;
-    height: 56px;
-    box-sizing: border-box;
-    border: 1px solid #CDCDCD;
-    border-radius: 3px;
-  }
-
   .live-example__title {
     font-family: @base_font_regular;
     font-size: 36px;
@@ -40,6 +26,20 @@
     font-weight: normal;
     line-height: 18px;
     color:#444444;
+  }
+
+  .live-example__list {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+  }
+
+  .live-example__item {
+    width: 124px;
+    height: 56px;
+    box-sizing: border-box;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
   }
 
   .live-example__number {
@@ -85,4 +85,101 @@
     padding-top: 25px;
   }
 
+  // Планшетный режим
+  @media ( min-width: @tablet-width ) {
+    .live-example__wrapper {
+      width: 708px;
+      background-size: 708px 300px;
+    }
+
+    .live-example__title {
+      font-family: @base_font_regular;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 60px;
+    }
+
+    .live-example__text {
+      font-family: @base_font_regular_second;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 24px;
+      color:#444444;
+    }
+
+    .live-example__list {
+      width: 370px;
+      margin-top: 45px;
+    }
+
+    .live-example__item {
+      width: 162px;
+      height: 72px;
+    }
+
+    .live-example__number {
+      font-family: @base_font_regular;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 37px;
+    }
+
+    .live-example__description {
+      font-family: @base_font_regular_second;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 14px;
+
+      background: #ffffff;
+      width: 145px;
+      top: -20px;
+      left: 8px;
+    }
+
+    // Стили первого описания
+    .live-example__list .live-example__item:first-child p:nth-child(2) {
+      width: 110px;
+      margin-left: 17px;
+    }
+
+    // Убираем переносы
+    .live-example__item br {
+      display: none;
+    }
+
+    .live-example__subtitle {
+      font-family: @base_font_regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+      text-align: right;
+
+      display: flex;
+      width: 175px;
+      margin-left: auto;
+      margin-top: -80px;
+    }
+
+    .slider__controls-slider {
+      display: flex;
+    }
+
+  }
+
+}
+
+// Планшетный режим
+@media ( min-width: @tablet-width ) {
+  .live-example {
+    background-color: #ffffff;
+    background-image: url(../img/background-images/live-example-background.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-y: 315px;
+  }
 }
