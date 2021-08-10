@@ -24,7 +24,9 @@
     cursor: pointer;
   }
 
-  // Планшетный режим
+
+  /****************************************** Планшетный режим ****************************/
+
   @media ( min-width: @tablet-width ) {
     .page-header__wrapper {
       width: 708px;
@@ -49,6 +51,28 @@
     }
 
   }
+
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .page-header__wrapper {
+      width: 1220px;
+      min-height: 160px;
+    }
+
+    .page-header__logo-tablet {
+      display: none;
+    }
+
+    .page-header__logo-desctop {
+      display: block;
+    }
+
+
+  }
+
+
 
 }
 

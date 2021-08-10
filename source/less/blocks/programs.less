@@ -92,7 +92,9 @@
     color: #000000;
   }
 
-  // Планшетный режим
+
+  /****************************************** Планшетный режим ****************************/
+
   @media ( min-width: @tablet-width ) {
     .programs__wrapper {
       width: 708px;
@@ -103,7 +105,6 @@
       width: 708px;
       height: 372px;
       padding: 0;
-
     }
 
     .programs__title-text {
@@ -154,7 +155,7 @@
       display: flex;
     }
 
-    .programs__title-icon-background{
+    .programs__title-icon-background {
       display: flex;
       position: absolute;
       width: 200px;
@@ -178,6 +179,73 @@
       position: relative;
       margin-top: 40px;
       left: -35px;
+    }
+
+  }
+
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .programs__wrapper {
+      width: 1220px;
+    }
+
+    .programs__list {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+    }
+
+    .programs__item {
+      width: 570px;
+    }
+
+    .programs__title {
+      margin-top: 35px;
+    }
+
+    .programs__title-icon-background {
+      display: flex;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      align-self:center;
+      margin-top: 0;
+      margin-left: 50px;
+    }
+
+    .programs__title-icon-panter_slim {
+      position: relative;
+      width: 70px;
+      height: 97px;
+      top: 0px;
+      left: -8px;
+    }
+
+    .programs__title-icon-panter_pro {
+      position: relative;
+      width: 134px;
+      height: 56px;
+      top: -15px;
+      left: -19px;
+    }
+
+    .programs__title-text {
+      margin-top: 0px;
+      margin-left: 50px;
+    }
+
+    .programs__description p {
+      display: block;
+      width: 467px;
+      margin-top: 25px;
+      margin-left: 52px;
+    }
+
+    .programs__link {
+      margin-top: 30px;
+      margin-left: 52px;
     }
 
   }

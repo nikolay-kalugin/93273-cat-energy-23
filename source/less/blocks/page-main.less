@@ -11,19 +11,25 @@
     letter-spacing: 0em;
     text-align: center;
 
+    position: relative;
+    z-index: 10;
     width: 249px;
     height: 72px;
     margin: 0 auto;
     padding-top: 17px;
+    top: -295px;
   }
 
   .page-main__title--color {
     color: #FFFFFF;
   }
 
-  // Планшетный режим
+
+  /****************************************** Планшетный режим ****************************/
+
   @media ( min-width: @tablet-width ) {
     .page-main__title {
+      position: static;
       min-width: 414px;
       height: 120px;
       text-align: left;
@@ -39,7 +45,18 @@
 
     .page-main__title--color {
       color: #000000;
+    }
 
+  }
+
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .page-main__title {
+      position: relative;
+      top: -470px;
+      left: -635px;
     }
 
   }
