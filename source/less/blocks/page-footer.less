@@ -124,7 +124,8 @@
   }
 
 
-  // Планшетный режим
+/****************************************** Планшетный режим ****************************/
+
   @media ( min-width: @tablet-width ) {
     .page-footer__contacts-wrapper {
       width: 708px;
@@ -178,8 +179,8 @@
     }
 
     .page-footer__social-item-vk img {
-      width: 29px;
-      height: 17px;
+      width: 30px;
+      height: 22px;
     }
 
     .page-footer__social-item-instagram img {
@@ -188,14 +189,51 @@
     }
 
     .page-footer__social-item-facebook img {
-      width: 13px;
-      height: 27px;
+      width: 28px;
+      height: 33px;
     }
 
     .page-footer__copyright-link-text a {
       padding-right: 20px;
     }
 
+  }
+
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .page-footer__contacts {
+      position: relative;
+      display: flex;
+      width: 570px;
+      height: 201px;
+      align-items: center;
+      justify-content: center;
+
+      top: 100px;
+      left: 110px;
+    }
+
+    .page-footer__contacts-wrapper {
+      width: 418px;
+    }
+
+    .page-footer__contacts-title {
+      margin-left: 0;
+    }
+
+    .page-footer__contacts-text {
+      margin-right: 0;
+    }
+
+    .page-footer__contacts-maps {
+      margin-top: -205px;
+    }
+
+    .page-footer__aside-wrapper {
+      width: 1220px;
+    }
 
   }
 

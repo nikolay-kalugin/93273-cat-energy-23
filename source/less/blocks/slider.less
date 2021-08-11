@@ -25,7 +25,8 @@
   }
 
 
-  // Планшетный режим
+  /****************************************** Планшетный режим ****************************/
+
   @media ( min-width: @tablet-width ) {
     .slider__image--before {
       display: block;
@@ -59,6 +60,17 @@
 
   }
 
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .slider__image--before {
+      width: 680px;
+      height: 530px;
+    }
+
+  }
+
 }
 
 // Планшетный режим
@@ -67,6 +79,16 @@
     background: none;
     margin-top: 80px;
     margin-bottom: 25px;
+  }
+
+}
+
+// Десктопный режим
+@media ( min-width: @desctop-width ) {
+  .slider {
+    position: relative;
+    margin-top: -355px;
+    margin-left: 605px;
   }
 
 }

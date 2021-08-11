@@ -85,7 +85,9 @@
     padding-top: 25px;
   }
 
-  // Планшетный режим
+
+  /****************************************** Планшетный режим ****************************/
+
   @media ( min-width: @tablet-width ) {
     .live-example__wrapper {
       width: 708px;
@@ -171,6 +173,41 @@
 
   }
 
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .live-example__wrapper {
+      width: 1220px;
+    }
+
+    .live-example__text {
+      width: 440px;
+      position: relative;
+      top: 85px;
+
+    }
+
+    .live-example__list {
+      position: relative;
+      top: 105px;
+    }
+
+    .live-example__subtitle {
+      position: relative;
+      width: 330px;
+      margin-left: 0;
+      top: 230px;
+    }
+
+    .live-example__description {
+      background: #eaeaea;
+    }
+
+
+  }
+
+
 }
 
 // Планшетный режим
@@ -181,5 +218,13 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position-y: 315px;
+  }
+}
+
+// Десктопный режим
+@media ( min-width: @desctop-width ) {
+  .live-example {
+    background-size: 1440px;
+    background-position-y: 185px;
   }
 }
