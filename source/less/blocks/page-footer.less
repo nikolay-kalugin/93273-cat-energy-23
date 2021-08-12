@@ -20,13 +20,17 @@
   }
 
   .page-footer__contacts-title {
-    font-family: Oswald_16_normal_400__20;
+    font-family: @base_font_regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
     text-transform: uppercase;
     color: #111111;
   }
 
   .page-footer__contacts-text {
-    font-family: Arial;
+    font-family: @base_font_regular_second;
     font-size: 14px;
     font-style: normal;
     font-weight: normal;
@@ -35,8 +39,9 @@
   }
 
   .page-footer__contacts-maps {
-    //margin-bottom: -4px;
     border: 2px solid blue;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .page-footer__aside  {
@@ -47,44 +52,52 @@
   .page-footer__aside-wrapper {
     width: 280px;
     margin: 0 auto;
-   }
+  }
 
-   .page-footer__logo {
-     padding: 39px 0;
-     text-align: center;
-     border-bottom: 1px solid #D9D9D9;
-   }
+  .page-footer__logo {
+    padding: 39px 0;
+    text-align: center;
+    border-bottom: 1px solid #D9D9D9;
+  }
 
-   .page-footer__social {
+  .page-footer__social {
     display: flex;
     padding: 20px 0;
     justify-content: center;
     align-self: center;
     border-bottom: 1px solid #D9D9D9;
-   }
+  }
 
-   .page-footer__social-list {
+  .page-footer__social-list {
     display: flex;
     width: 140px;
     height: 20px;
-    align-self: center;
+    align-items: center;
     justify-content: space-between;
-   }
+  }
 
-   .page-footer__social-item-vk {
+  .page-footer__social-item-vk {
     height: 13px;
-   }
+  }
 
-   .page-footer__social-item-instagram {
+  .page-footer__social-item-instagram {
     height: 16px;
-   }
+  }
 
-   .page-footer__social-item-facebook {
+  .page-footer__social-item-facebook {
     height: 18px;
-   }
+  }
+
+  .page-footer__social-item-vk,
+  .page-footer__social-item-instagram,
+  .page-footer__social-item-facebook {
+    display: flex;
+    align-items: center;
+  }
 
   .page-footer__social-link {
     text-decoration: none;
+
   }
 
   .page-footer__copyright {
@@ -101,7 +114,8 @@
 
   .page-footer__copyright-link-text a {
     text-decoration: none;
-    font-family: Arial;
+
+    font-family: @base_font_regular_second;
     font-size: 16px;
     font-style: normal;
     font-weight: normal;
@@ -109,7 +123,118 @@
     color: #444444;
   }
 
+
+/****************************************** Планшетный режим ****************************/
+
+  @media ( min-width: @tablet-width ) {
+    .page-footer__contacts-wrapper {
+      width: 708px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .page-footer__contacts-title {
+      font-family: @base_font_regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 21px;
+
+      margin-left: 40px;
+    }
+
+    .page-footer__contacts-text {
+      font-family: @base_font_regular_second;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+
+      text-align: right;
+      margin-right: 40px;
+    }
+
+    .page-footer__contacts-text-city {
+      display: block;
+      margin-top: 15px;
+    }
+
+    .page-footer__contacts-maps iframe{
+      width: 100%;
+      height: 400px;
+    }
+
+    // Стили для нижней части footer
+    .page-footer__aside-wrapper {
+      width: 708px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .page-footer__logo,
+    .page-footer__social {
+      border: none;
+    }
+
+    .page-footer__social-item-vk img {
+      width: 30px;
+      height: 22px;
+    }
+
+    .page-footer__social-item-instagram img {
+      width: 23px;
+      height: 23px;
+    }
+
+    .page-footer__social-item-facebook img {
+      width: 28px;
+      height: 33px;
+    }
+
+    .page-footer__copyright-link-text a {
+      padding-right: 20px;
+    }
+
+  }
+
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .page-footer__contacts {
+      position: relative;
+      display: flex;
+      width: 570px;
+      height: 201px;
+      align-items: center;
+      justify-content: center;
+
+      top: 100px;
+      left: 110px;
+    }
+
+    .page-footer__contacts-wrapper {
+      width: 418px;
+    }
+
+    .page-footer__contacts-title {
+      margin-left: 0;
+    }
+
+    .page-footer__contacts-text {
+      margin-right: 0;
+    }
+
+    .page-footer__contacts-maps {
+      margin-top: -205px;
+    }
+
+    .page-footer__aside-wrapper {
+      width: 1220px;
+    }
+
+  }
+
 }
-
-
-

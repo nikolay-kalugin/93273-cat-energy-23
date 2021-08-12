@@ -30,21 +30,28 @@
         </a>
       </div>
 
+      <!-- Logo_tablet -->
+      <div class="page-header__logo-tablet  page__block--hide">
+        <a class="page-header__logo-tablet-link" href="index.html">
+          <img src="img/logos/tablet/logo-tablet.svg" width="174" height="52" alt="header logo tablet">
+        </a>
+      </div>
+
       <!-- toggler -->
       <div class="page-header__toggle">
-        <img class="page-header__toggle" src="img/icons/icon_toggler_open.svg" alt="Иконка открыть меню">
-        <img class="page-header__toggle  page-header__toggle--visible-none" src="img/icons/icon_toggler_close.svg"
-          alt="Иконка закрыть меню">
+        <img class="page-header__toggle-open" src="img/icons/icon_toggler_open.svg" width="22" height="16"
+          alt="Иконка открыть меню">
+        <img class="page-header__toggle-close  page__block--hide" src="img/icons/icon_toggler_close.svg" width="22"
+          height="20" alt="Иконка закрыть меню">
       </div>
 
       <!-- Navigation -->
-      <nav class="main-nav">
+      <nav class="main-nav  page__block--hide">
 
-        <!-- menu ВРЕМЕННО СКРЫТО -->
         <div class="main-nav__wrapper">
 
           <!-- list -->
-          <ul class="main-nav__list  site-list">
+          <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--active">
               <a href="index.html">
                 Главная
@@ -159,7 +166,7 @@
                 <input class="form__input" type="email" name="email" required="required" value="kuklachev@gmail.com">
 
                 <div class="form__icon-phone">
-                  <img src="img/icons/icon_email.svg" alt="icon_email">
+                  <img src="img/icons/icon_email.svg" width="20" height="14" alt="icon_email">
                 </div>
 
               </label>
@@ -174,7 +181,7 @@
                   required="required" value="8-960-900-60-90">
 
                 <div class="form__icon-phone">
-                  <img src="img/icons/icon_phone.svg" alt="icon_phone">
+                  <img src="img/icons/icon_phone.svg" width="20" height="20" alt="icon_phone">
                 </div>
 
               </label>
@@ -253,17 +260,18 @@
 
 
   <!-- FOOTER -->
-  <footer class="page-footer  ">
+  <footer class="page-footer">
 
     <!-- Contacts -->
-    <div class="page-footer__contacts  page-footer__contacts--background">
+    <div class="page-footer__contacts">
 
-      <div class="page-footer__contacts-wrapper  page-footer__contacts--background">
+      <div class="page-footer__contacts-wrapper">
         <div class="page-footer__contacts-title">
           <p>Приглашаем<br>к сотрудничеству<br>дилеров!</p>
         </div>
         <div class="page-footer__contacts-text">
-          <p>ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <p>ул. Большая<br>Конюшенная, д. 19/8<br><span class="page-footer__contacts-text-city">Санкт-Петербург<span>
+          </p>
         </div>
       </div>
 
@@ -295,21 +303,21 @@
             <!-- vk.com -->
             <div class="page-footer__social-item-vk">
               <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
-                <img src="img/icons/icon_social_vk.svg" alt="vkontakte-icon">
+                <img src="img/icons/icon_social_vk.svg" width="23" height="16" alt="vkontakte-icon">
               </a>
             </div>
 
             <!-- instagram -->
             <div class="page-footer__social-item-instagram">
               <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
-                <img src="img/icons/icon_social_instagram.svg" alt="instagram-icon">
+                <img src="img/icons/icon_social_instagram.svg" width="16" height="16" alt="instagram-icon">
               </a>
             </div>
 
             <!-- facebook -->
             <div class="page-footer__social-item-facebook">
               <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
-                <img src="img/icons/icon_social_facebook.svg" alt="facebook-icon">
+                <img src="img/icons/icon_social_facebook.svg" width="22" height="22" alt="facebook-icon">
               </a>
             </div>
 
@@ -341,6 +349,9 @@
     </div>
   </footer>
 
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
 
 </body>
 

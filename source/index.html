@@ -30,21 +30,35 @@
         </a>
       </div>
 
+      <!-- Logo_tablet -->
+      <div class="page-header__logo-tablet  page__block--hide">
+        <a class="page-header__logo-tablet-link" href="index.html">
+          <img src="img/logos/tablet/logo-tablet.svg" width="174" height="52" alt="header logo tablet">
+        </a>
+      </div>
+
+      <!-- Logo_DescTop -->
+      <div class="page-header__logo-desctop  page__block--hide">
+        <a class="page-header__logo-desctop-link" href="index.html">
+          <img src="img/logos/desctop/logo-desctop.svg" width="202" height="59" alt="header logo desctop">
+        </a>
+      </div>
+
       <!-- toggler -->
       <div class="page-header__toggle">
-        <img class="page-header__toggle" src="img/icons/icon_toggler_open.svg" alt="Иконка открыть меню">
-        <img class="page-header__toggle  page-header__toggle--visible-none" src="img/icons/icon_toggler_close.svg"
-          alt="Иконка закрыть меню">
+        <img class="page-header__toggle-open" src="img/icons/icon_toggler_open.svg" width="22" height="16"
+          alt="Иконка открыть меню">
+        <img class="page-header__toggle-close  page__block--hide" src="img/icons/icon_toggler_close.svg" width="22"
+          height="20" alt="Иконка закрыть меню">
       </div>
 
       <!-- Navigation -->
-      <nav class="main-nav">
+      <nav class="main-nav  page__block--hide">
 
-        <!-- menu ВРЕМЕННО СКРЫТО -->
         <div class="main-nav__wrapper">
 
           <!-- list -->
-          <ul class="main-nav__list  site-list">
+          <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--active">
               <a href="index.html">
                 Главная
@@ -69,6 +83,7 @@
     </div>
   </header>
 
+
   <!-- MAIN -->
   <main class="page-main">
 
@@ -79,6 +94,8 @@
         <!-- promo header -->
         <div class="promo__header">
 
+          <div class="promo__overlay"></div>
+
           <!-- title -->
           <h1 class="page-main__title  page-main__title--color">Функциональное<br> питание для котов</h1>
 
@@ -87,10 +104,10 @@
 
         </div>
 
-        <!-- image -->
+        <!-- image mobile -->
         <div class="promo__image">
           <img src="img/index-main-image-mobile.png" width="280" height="270"
-            alt="Изображение банка с кошачьим дошираком">
+            alt="Изображение банка с кошачьим дошираком mobile">
         </div>
 
         <!-- button -->
@@ -113,10 +130,9 @@
 
             <div class="programs__title">
 
-              <div class="programs__title-icon-weight-loss">
-                <!-- <img src="img/icons/icon_ellipse.svg" alt="icon_ellipse"> -->
-                <img class="programs__title-icon-panter_slim" src="img/icons/icon_panter_slim.svg"
-                  alt="icon_panter_slim">
+              <div class="programs__title-icon-background">
+                <img class="programs__title-icon-panter_slim" src="img/icons/icon_panter_slim.svg" width="36"
+                  height="50" alt="icon_panter_slim">
               </div>
 
               <div class="programs__title-text">
@@ -141,7 +157,7 @@
 
               <div class="programs__link-arrow">
                 <a href="catalog.html">
-                  <img src="img/icons/icon_arrow.svg" alt="link-arrow">
+                  <img src="img/icons/icon_arrow.svg" width="24" height="12" alt="link-arrow">
                 </a>
               </div>
 
@@ -154,9 +170,10 @@
 
             <div class="programs__title">
 
-              <div class="programs__title-icon-weight-gain">
-                <!-- <img src="img/icons/icon_ellipse.svg" alt="icon_ellipse"> -->
-                <img class="programs__title-icon-panter_pro" src="img/icons/icon_panter_pro.svg" alt="icon_panter_pro">
+              <div class="programs__title-icon-background">
+
+                <img class="programs__title-icon-panter_pro" src="img/icons/icon_panter_pro.svg" width="67" height="28"
+                  alt="icon_panter_pro">
               </div>
 
               <div class="programs__title-text">
@@ -181,7 +198,7 @@
 
               <div class="programs__link-arrow">
                 <a href="catalog.html">
-                  <img src="img/icons/icon_arrow.svg" alt="link-arrow">
+                  <img src="img/icons/icon_arrow.svg" width="24" height="12" alt="link-arrow">
                 </a>
               </div>
 
@@ -208,7 +225,7 @@
           <li class="how-it-works__item">
 
             <div class="how-it-works__item-icon-step-1">
-              <img src="img/icons/how-it-works__icon-step-1.svg">
+              <img src="img/icons/how-it-works__icon-step-1.svg" width="60" height="60" alt="icon-step-1.svg">
             </div>
 
             <p class="how-it-works__item-description">
@@ -220,7 +237,7 @@
           <li class="how-it-works__item">
 
             <div class="how-it-works__item-icon-step-2">
-              <img src="img/icons/how-it-works__icon-step-2.svg">
+              <img src="img/icons/how-it-works__icon-step-2.svg" width="60" height="60" alt="icon-step-2.svg">
             </div>
 
             <p class="how-it-works__item-description">
@@ -232,7 +249,7 @@
           <li class="how-it-works__item">
 
             <div class="how-it-works__item-icon-step-3">
-              <img src="img/icons/how-it-works__icon-step-3.svg">
+              <img src="img/icons/how-it-works__icon-step-3.svg" width="60" height="60" alt="icon-step-3.svg">
             </div>
 
             <p class="how-it-works__item-description">
@@ -244,7 +261,7 @@
           <li class="how-it-works__item">
 
             <div class="how-it-works__item-icon-step-4">
-              <img src="img/icons/how-it-works__icon-step-4.svg">
+              <img src="img/icons/how-it-works__icon-step-4.svg" width="60" height="60" alt="icon-step-4.svg">
             </div>
 
             <p class="how-it-works__item-description">
@@ -278,7 +295,7 @@
             <p class="live-example__number">
               5 кг
             </p>
-            <p class="live-example__description">снижение<br>веса</p>
+            <p class="live-example__description">снижение<br> веса</p>
 
           </div>
 
@@ -287,7 +304,7 @@
             <p class="live-example__number">
               60 дней
             </p>
-            <p class="live-example__description">затрачено<br>времени</p>
+            <p class="live-example__description">затрачено<br> времени</p>
 
           </div>
 
@@ -302,10 +319,10 @@
         <div class="slider">
 
           <!-- image before -->
-          <img class="slider__image  slider__image--before" src="img/slider/cat-fat.png" height="232"
+          <img class="slider__image  slider__image--before" src="img/slider/cat-fat.png" width="311" height="232"
             alt="Изображение Толстый кот">
           <!-- image after -->
-          <img class="slider__image  slider__image--after" src="img/slider/cat-skinny.png" height="232"
+          <img class="slider__image  slider__image--after" src="img/slider/cat-skinny.png" width="300" height="232"
             alt="Изображение Худой кот">
 
           <!-- button -->
@@ -333,7 +350,8 @@
           <p>Приглашаем<br>к сотрудничеству<br>дилеров!</p>
         </div>
         <div class="page-footer__contacts-text">
-          <p>ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <p>ул. Большая<br>Конюшенная, д. 19/8<br><span class="page-footer__contacts-text-city">Санкт-Петербург<span>
+          </p>
         </div>
       </div>
 
@@ -365,21 +383,21 @@
             <!-- vk.com -->
             <div class="page-footer__social-item-vk">
               <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
-                <img src="img/icons/icon_social_vk.svg" alt="vkontakte-icon">
+                <img src="img/icons/icon_social_vk.svg" width="23" height="16" alt="vkontakte-icon">
               </a>
             </div>
 
             <!-- instagram -->
             <div class="page-footer__social-item-instagram">
               <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
-                <img src="img/icons/icon_social_instagram.svg" alt="instagram-icon">
+                <img src="img/icons/icon_social_instagram.svg" width="16" height="16" alt="instagram-icon">
               </a>
             </div>
 
             <!-- facebook -->
             <div class="page-footer__social-item-facebook">
               <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
-                <img src="img/icons/icon_social_facebook.svg" alt="facebook-icon">
+                <img src="img/icons/icon_social_facebook.svg" width="22" height="22" alt="facebook-icon">
               </a>
             </div>
 
@@ -412,8 +430,8 @@
   </footer>
 
 
-  <!-- SCRIPTS -->
-  <!-- <script src="js/actions.js"></script> -->
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
 
 </body>
 

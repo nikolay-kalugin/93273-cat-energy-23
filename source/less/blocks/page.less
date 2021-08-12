@@ -7,4 +7,28 @@
     background: #ffffff;
   }
 
+  /* Модификаторы для показа скрытия блоков*/
+  .page__block--hide {
+    display: none;
+  }
+
+  /* Изменение ширины страницы  для планшетной версии */
+  @media ( min-width: @tablet-width ) {
+    .page__body {
+      width: 768px;
+
+    }
+  }
+
+  /* Изменение ширины страницы  для десктопной версии */
+  @media ( min-width: @desctop-width ) {
+    .page__body {
+      width: 1440px;
+
+    }
+  }
+
+
+
+
 }
