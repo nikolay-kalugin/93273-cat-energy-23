@@ -88,11 +88,12 @@
         <header class="form__header">
 
           <!-- title -->
-          <h1 class="page-main__title">Подбор программы</h1>
+          <h1 class="page-main__title" style="width: 260px; top: 0px; margin: 0; text-align: left;">Подбор программы
+          </h1>
 
           <!-- subtitle -->
           <div class="form__subtitle">
-            <p>Заполните анкету и мы подберем
+            <p>Заполните анкету и мы подберем<br>
               программу питания для вашего кота</p>
           </div>
 
@@ -106,20 +107,23 @@
           <div class="form__block-name-weight-age">
 
             <div class="form__pole">
-              <label class="form__label">Имя:*
-                <input class="form__input" type="text" name="name" required="required" value="Барсик">
+              <label class="form__label">
+                <div class="form__label-name">Имя:*</div>
+                <input class="form__input  form__input-name" type="text" name="name" required="required" value="Барсик">
               </label>
             </div>
 
             <div class="form__pole">
-              <label class="form__label">Вес (кг):*
-                <input class="form__input" type="number" name="weight" required="required" value="7">
+              <label class="form__label">
+                <div class="form__label-weight">Вес (кг):*</div>
+                <input class="form__input  form__input-weight" type="text" name="weight" required="required" value="7">
               </label>
             </div>
 
             <div class="form__pole">
-              <label class="form__label">Вораст (лет):
-                <input class="form__input" type="number" name="age" value="7">
+              <label class="form__label">
+                <div class="form__label-age">Возраст (лет):</div>
+                <input class="form__input  form__input-age" type="text" name="age" value="7">
               </label>
             </div>
 
@@ -130,24 +134,24 @@
           <!--  block "target"  -->
           <div class="form__block-target">
 
-            <div class="form__pole">
-              <label class="form__label">
-                <input class="form__input" name="target" type="radio" value="weight_loss" checked>
-                Похудение
+            <div class="form__pole  form__pole-target">
+              <label class="form__label  form__label-target">
+                <input class="form__input  form__input-target" name="target" type="radio" value="weight_loss" checked>
+                <div class="form__label-weight-loss">Похудение</div>
               </label>
             </div>
 
-            <div class="form__pole">
-              <label class="form__label">
-                <input class="form__input" name="target" type="radio" value="weight_gain">
-                Набор массы
+            <div class="form__pole  form__pole-target">
+              <label class="form__label  form__label-target">
+                <input class="form__input  form__input-target" name="target" type="radio" value="weight_gain">
+                <div class="form__label-weight-gain">Набор массы</div>
               </label>
             </div>
 
-            <div class="form__pole">
-              <label class="form__label">
-                <input class="form__input" name="target" type="radio" value="need_advice">
-                Не знаю (Нужен ваш совет)
+            <div class="form__pole  form__pole-target">
+              <label class="form__label  form__label-target">
+                <input class="form__input  form__input-target" name="target" type="radio" value="need_advice">
+                <div class="form__label-need-advice">Не знаю (Нужен ваш совет)</div>
               </label>
             </div>
 

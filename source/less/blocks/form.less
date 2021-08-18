@@ -21,18 +21,90 @@
     line-height: 18px;
     text-transform: uppercase;
     color:#000000;
+    margin-top: -15px;
   }
 
   .form__block-name-weight-age {
     box-sizing: border-box;
     border: 2px solid blue;
     margin: 10px 0;
+
+    .form__label-name {
+      display: inline-block;
+      width: 40px;
+    }
+
+    .form__label-weight {
+      display: inline-block;
+      width: 60px;
+    }
+
+    .form__label-age {
+      display: inline-block;
+      width: 95px;
+    }
+
+    .form__input {
+      display: inline-block;
+      height: 45px;
+      margin-top: 10px;
+      margin-left: 10px;
+      padding-left: 10px;
+      border: 1px solid #E7E7E7;
+    }
+
+    .form__input-name {
+      width: calc( 280px - 32px - 40px );
+    }
+
+    .form__input-weight {
+      width: calc( 280px - 32px - 60px );
+    }
+
+    .form__input-age {
+      width: calc( 280px - 32px - 95px );
+    }
+
   }
 
   .form__block-target {
     box-sizing: border-box;
     border: 2px solid blue;
     margin: 10px 0;
+  }
+
+  .form__pole-target {
+    margin-top: 10px;
+  }
+
+  .form__label-target {
+    display: flex;
+    align-items: center;
+  }
+
+  [type="radio"] {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+  }
+
+  .form__label-weight-loss,
+  .form__label-weight-gain,
+  .form__label-need-advice {
+    margin-left: 10px;
+  }
+
+  .form__label-weight-loss {
+    width: 80px;
+  }
+
+  .form__label-weight-gain {
+    width: 100px;
+  }
+
+  .form__label-need-advice {
+    width: 200px;
   }
 
   .form__block-contacts {
