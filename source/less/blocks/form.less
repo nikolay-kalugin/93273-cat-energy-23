@@ -24,53 +24,60 @@
     margin-top: -15px;
   }
 
+  /* Блок name-weight-age */
   .form__block-name-weight-age {
     box-sizing: border-box;
     border: 2px solid blue;
     margin: 10px 0;
-
-    .form__label-name {
-      display: inline-block;
-      width: 40px;
-    }
-
-    .form__label-weight {
-      display: inline-block;
-      width: 60px;
-    }
-
-    .form__label-age {
-      display: inline-block;
-      width: 95px;
-    }
-
-    .form__input {
-      display: inline-block;
-      height: 45px;
-      margin-top: 10px;
-      margin-left: 10px;
-      padding-left: 10px;
-      border: 1px solid #E7E7E7;
-    }
-
-    .form__input-name {
-      width: calc( 280px - 32px - 40px );
-    }
-
-    .form__input-weight {
-      width: calc( 280px - 32px - 60px );
-    }
-
-    .form__input-age {
-      width: calc( 280px - 32px - 95px );
-    }
-
+    padding-bottom: 10px;
   }
 
+  .form__label-name {
+    display: inline-block;
+    width: 40px;
+  }
+
+  .form__label-weight {
+    display: inline-block;
+    width: 60px;
+  }
+
+  .form__label-age {
+    display: inline-block;
+    width: 95px;
+  }
+
+  .form__input {
+    display: inline-block;
+    border: 1px solid #E7E7E7;
+  }
+
+  .form__input-name,
+  .form__input-weight,
+  .form__input-age {
+    margin-top: 10px;
+    height: 45px;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  .form__input-name {
+    width: calc( 280px - 32px - 40px );
+  }
+
+  .form__input-weight {
+    width: calc( 280px - 32px - 60px );
+  }
+
+  .form__input-age {
+    width: calc( 280px - 32px - 95px );
+  }
+
+  /* Блок target */
   .form__block-target {
     box-sizing: border-box;
     border: 2px solid blue;
-    margin: 10px 0;
+    padding-bottom: 10px;
   }
 
   .form__pole-target {
@@ -82,17 +89,41 @@
     align-items: center;
   }
 
-  [type="radio"] {
+  .form__input-target {
+    display: none;
+  }
+
+  .new_radio {
+    display: inline-block;
+    position: relative;
     width: 30px;
     height: 30px;
+    border-radius: 50%;
     border: 1px solid #CDCDCD;
-    box-sizing: border-box;
+  }
+
+  .new_radio::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #68B738;
+    opacity: 0;
+  }
+
+  .form__input-target:checked + .new_radio::before {
+    opacity: 1;
   }
 
   .form__label-weight-loss,
   .form__label-weight-gain,
   .form__label-need-advice {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .form__label-weight-loss {
@@ -107,10 +138,13 @@
     width: 200px;
   }
 
+  /* Блок contacts */
   .form__block-contacts {
     box-sizing: border-box;
     border: 2px solid blue;
-    margin: 10px 0;
+    margin-top: 20px;
+    padding: 0;
+    padding-top: 25px;
   }
 
   .form__label {
@@ -123,6 +157,16 @@
     color:#444444;
   }
 
+  .form__label-email {
+    display: inline-block;
+    width: 50px;
+  }
+
+  .form__label-tel {
+    display: inline-block;
+    width: 70px;
+  }
+
   .form__input {
     font-family: @base_font_regular;
     font-size: 16px;
@@ -133,10 +177,37 @@
     color:#444444;
   }
 
+  .form__input-email,
+  .form__input-tel {
+    display: inline-block;
+    margin-left: 5px;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px solid #CDCDCD;
+  }
+
+  .form__input-email {
+    width: calc( 280px - 32px - 50px );
+  }
+
+  .form__input-tel {
+    width: calc( 280px - 32px - 70px );
+  }
+
+  .form__icon-email,
+  .form__icon-phone {
+    position: relative;
+    top: -33px;
+    left: 237px;
+  }
+
+  /* Блок comment */
   .form__block-comment {
     box-sizing: border-box;
     border: 2px solid blue;
-    margin: 10px 0;
+    margin-top: 20px;
+    padding: 0;
+    padding-top: 25px;
   }
 
   .form__legend {
@@ -148,12 +219,66 @@
     color:#000000;
   }
 
+  .form__input-comment {
+    border: 1px solid #CDCDCD;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  /* Блок additionally */
   .form__block-additionally {
     box-sizing: border-box;
     border: 2px solid blue;
-    margin: 10px 0;
+    margin-top: 20px;
+    padding: 15px 0;
   }
 
+  .form__label-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .form__input-checkbox {
+    display: none;
+  }
+
+  .new_checkbox {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #CDCDCD;
+  }
+
+  .new_checkbox::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    content: "";
+    width: 19px;
+    height: 14px;
+    background-image: url(../img/icons/icon_flag.svg);
+    // background-size: 19px  14px;
+    opacity: 0;
+  }
+
+  .form__input-checkbox:checked + .new_checkbox::before {
+    opacity: 1;
+  }
+
+  .form__label-no-sugar,
+  .form__label-water,
+  .form__label-milk,
+  .form__label-vitamins {
+    display: inline-block;
+    margin-left: 15px;
+    color: #000000;
+  }
+
+  /* Блок submit */
   .form__submit {
     box-sizing: border-box;
     border: 2px solid blue;
@@ -184,7 +309,235 @@
     line-height: 16px;
     color: #000000;
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
+  }
+
+
+  /****************************************** Планшетный режим ****************************/
+
+  @media ( min-width: @tablet-width ) {
+    .form__wrapper {
+      width: 628px;
+    }
+
+    .form__subtitle,
+    .form__label,
+    .form__input {
+      font-family: @base_font_regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 30px;
+    }
+
+    .form__legend {
+      font-family: @base_font_regular;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 36px;
+    }
+
+    .form__legend br {
+      display: none;
+    }
+
+    /* Блок name-weight-age */
+    .form__block-name-weight-age{
+      margin: 30px 0;
+      padding-bottom: 20px;
+    }
+
+    .form__input-name,
+    .form__input-weight,
+    .form__input-age {
+      margin-top: 20px;
+    }
+
+    .form__label-name {
+      width: 50px;
+    }
+
+    .form__label-weight {
+      width: 80px;
+    }
+
+    .form__label-age {
+      width: 120px;
+    }
+
+    .form__input-name {
+      width: calc( 628px - 33px - 50px );
+    }
+
+    .form__input-weight {
+      width: calc( 628px - 33px - 80px );
+    }
+
+    .form__input-age {
+      width: calc( 628px - 33px - 120px );
+    }
+
+    /* Блок target */
+    .form__block-target {
+      border: 1px solid #E7E7E7;
+      padding-top: 5px;
+      padding-bottom: 20px;
+      margin-top: 40px;
+    }
+
+    .form__pole-target {
+      margin-top: 15px;
+    }
+
+    .form__label-target {
+      margin-left: 30px;
+    }
+
+    .new_radio {
+      width: 40px;
+      height: 40px;
+    }
+
+    .new_radio::before {
+      width: 18px;
+      height: 18px;
+    }
+
+    .form__label-weight-loss,
+    .form__label-weight-gain,
+    .form__label-need-advice {
+      margin-left: 20px;
+    }
+
+    .form__label-weight-loss {
+      width: 95px;
+    }
+
+    .form__label-weight-gain {
+      width: 115px;
+    }
+
+    .form__label-need-advice {
+      width: 235px;
+    }
+
+    /* Блок contacts */
+    .form__block-contacts {
+      margin-top: 50px;
+      padding-top: 50px;
+    }
+
+    .form__label-email {
+      width: 65px;
+    }
+
+    .form__label-tel {
+      width: 85px;
+    }
+
+    .form__input-email,
+    .form__input-tel {
+      margin-left: 10px;
+      padding-left: 15px;
+    }
+
+    .form__input-email {
+      width: calc( 628px - 42px - 65px );
+    }
+
+    .form__input-tel {
+      width: calc( 628px - 42px - 85px );
+    }
+
+    .form__icon-email,
+    .form__icon-phone {
+      top: -37px;
+      left: 580px;
+    }
+
+    /* Блок comment */
+    .form__block-comment {
+      margin-top: 50px;
+      padding-top: 60px;
+    }
+
+    .form__input-comment {
+      width: 595px;
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+
+    /* Блок additionally */
+    .form__block-additionally {
+      margin-top: 50px;
+      padding-top: 20px;
+
+      display: grid;
+      grid-template-columns: 50%  50%;
+    }
+
+
+    .form__label-checkbox {
+      margin-top: 35px;
+    }
+
+    .new_checkbox {
+      width: 40px;
+      height: 40px;
+    }
+
+    .new_checkbox::before {
+      background-size: 25px 19px;
+      width: 25px;
+      height: 19px;
+    }
+
+    .form__label-no-sugar,
+    .form__label-water,
+    .form__label-milk,
+    .form__label-vitamins {
+      margin-left: 20px;
+    }
+
+    /* Блок submit */
+    .form__submit {
+      margin-top: 40px;
+    }
+
+    .form__submit-button  input {
+      height: 50px;
+
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+    }
+
+    .form__submit-required-fields-text {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 16px;
+    }
+
+    .form__submit-required-fields-text-position {
+      position: relative;
+      top: -50px;
+      left: 90px;
+    }
+
+
+  }
+
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .form__wrapper {
+      width: 1220px;
+    }
+
   }
 
 }
