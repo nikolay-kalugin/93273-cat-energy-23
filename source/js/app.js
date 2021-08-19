@@ -21,4 +21,3 @@ for (let point of points) {
   }
 
 }
-
