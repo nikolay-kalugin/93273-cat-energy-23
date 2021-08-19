@@ -1,6 +1,11 @@
 .goods {
   background: #ffffff;
 
+  .goods__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
   .goods__list {
     margin: 0;
     padding: 0;
@@ -44,15 +49,11 @@
     color: #000000;
   }
 
-  .goods__parametr {
-    font-family: @base_font_regular_second;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 16px;
-    color: #444444;
+  .goods__info-title br:nth-child(2) {
+    display: none;
   }
 
+  .goods__parametr,
   .goods__value {
     font-family: @base_font_regular_second;
     font-size: 12px;
@@ -115,4 +116,77 @@
     color: #444444;
   }
 
+
+  /****************************************** Планшетный режим ****************************/
+
+  @media ( min-width: @tablet-width ) {
+    .goods__wrapper {
+      width: 708px;
+    }
+
+    .goods__list  {
+      display: grid;
+      grid-template-columns: 46% 46%;
+      grid-column-gap: 8%;
+    }
+
+    .goods__card {
+      background: #F2F2F2;
+      margin-top: 140px;
+      padding: 0 38px;
+      padding-bottom: 38px;
+      grid-template-rows: 390px  40px;
+    }
+
+    .goods__card-wrapper {
+      display: block;
+    }
+
+    .goods__image img {
+      width: 161px;
+      height: 171px;
+      position: relative;
+      top: -50px;
+    }
+
+    .goods__info {
+      margin-top: -20px;
+    }
+
+    .goods__info-title {
+      text-align: center;
+
+      font-family: @base_font_regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    .goods__info-title br:nth-child(1) {
+      display: none;
+    }
+
+    .goods__info-title br:nth-child(2) {
+      display: block;
+    }
+
+    .goods__info-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #CDCDCD;
+    }
+
+    .goods__parametr,
+    .goods__value {
+      font-family: @base_font_regular_second;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 16px;
+      color: #444444;
+    }
+
+  }
+
 }
+
