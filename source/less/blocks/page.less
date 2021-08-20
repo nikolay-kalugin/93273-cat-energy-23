@@ -7,7 +7,21 @@
     background: #ffffff;
   }
 
-  /* Модификаторы для показа скрытия блоков*/
+  /* Сброс тандартных стилей элементов формы */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  /* Модификаторы для показа скрытия блоков */
   .page__block--hide {
     display: none;
   }

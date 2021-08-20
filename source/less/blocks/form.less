@@ -50,6 +50,22 @@
   .form__input {
     display: inline-block;
     border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+  }
+
+  .form__input:hover {
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+  }
+
+  .form__input:focus {
+    border: 2px solid #444444;
+    box-sizing: border-box;
+  }
+
+  input:required:invalid {
+    border: 2px solid #FF8282;
+    box-sizing: border-box;
   }
 
   .form__input-name,
@@ -62,15 +78,15 @@
   }
 
   .form__input-name {
-    width: calc( 280px - 32px - 40px );
+    width: calc( 280px - 18px - 40px );
   }
 
   .form__input-weight {
-    width: calc( 280px - 32px - 60px );
+    width: calc( 280px - 18px - 60px );
   }
 
   .form__input-age {
-    width: calc( 280px - 32px - 95px );
+    width: calc( 280px - 18px - 95px );
   }
 
   /* Блок target */
@@ -101,6 +117,10 @@
     height: 30px;
     border-radius: 50%;
     border: 1px solid #CDCDCD;
+  }
+
+  .new_radio:hover {
+    border: 1px solid #BABABA;
   }
 
   .new_radio::before {
@@ -184,22 +204,44 @@
     margin-left: 5px;
     height: 45px;
     padding-left: 10px;
-    border: 1px solid #CDCDCD;
+  }
+
+  .form__input-email:focus + .form__icon-email svg path,
+  .form__input-email:focus + .form__icon-email svg line {
+    stroke:#68B738;
+  }
+
+  .form__input-email:required:invalid + .form__icon-email svg path,
+  .form__input-email:required:invalid + .form__icon-email svg line {
+    stroke:#FF8282;
+  }
+
+  .form__input-tel:focus + .form__icon-phone svg g path {
+    fill:#68B738;
+  }
+
+  .form__input-tel:required:invalid + .form__icon-phone svg g path {
+    fill:#FF8282;
   }
 
   .form__input-email {
-    width: calc( 280px - 32px - 50px );
+    width: calc( 280px - 18px - 50px );
   }
 
   .form__input-tel {
-    width: calc( 280px - 32px - 70px );
+    width: calc( 280px - 18px - 70px );
   }
 
-  .form__icon-email,
+  .form__icon-email {
+    position: relative;
+    top: -30px;
+    left: 237px;
+  }
+
   .form__icon-phone {
     position: relative;
     top: -33px;
-    left: 237px;
+    left: 239px;
   }
 
   /* Блок comment */
@@ -251,6 +293,12 @@
     width: 30px;
     height: 30px;
     border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+  }
+
+  .new_checkbox:hover {
+    border: 1px solid #BABABA;
+    box-sizing: border-box;
   }
 
   .new_checkbox::before {
@@ -263,7 +311,6 @@
     width: 19px;
     height: 14px;
     background-image: url(../img/icons/icon_flag.svg);
-    // background-size: 19px  14px;
     opacity: 0;
   }
 
@@ -301,6 +348,14 @@
     line-height: 20px;
     text-transform: uppercase;
     color:#ffffff;
+  }
+
+  .form__submit-button:hover input {
+    background: #5EAA2F;
+  }
+
+  .form__submit-button:active input[value] {
+    color: #8EC36D;
   }
 
   .form__submit-required-fields-text {
@@ -369,15 +424,15 @@
     }
 
     .form__input-name {
-      width: calc( 628px - 33px - 50px );
+      width: calc( 628px - 20px - 50px );
     }
 
     .form__input-weight {
-      width: calc( 628px - 33px - 80px );
+      width: calc( 628px - 20px - 80px );
     }
 
     .form__input-age {
-      width: calc( 628px - 33px - 120px );
+      width: calc( 628px - 20px - 120px );
     }
 
     /* Блок target */
@@ -446,17 +501,21 @@
     }
 
     .form__input-email {
-      width: calc( 628px - 42px - 65px );
+      width: calc( 628px - 25px - 65px );
     }
 
     .form__input-tel {
-      width: calc( 628px - 42px - 85px );
+      width: calc( 628px - 25px - 85px );
     }
 
-    .form__icon-email,
+    .form__icon-email {
+      top: -37px;
+      left: 582px;
+    }
+
     .form__icon-phone {
       top: -37px;
-      left: 580px;
+      left: 584px;
     }
 
     /* Блок comment */
@@ -466,7 +525,7 @@
     }
 
     .form__input-comment {
-      width: 595px;
+      width: 619px;
       padding-top: 10px;
       padding-left: 20px;
     }
@@ -547,15 +606,15 @@
     }
 
     .form__input-name {
-      width: calc( 610px - 75px - 50px );
+      width: calc( 610px - 58px - 50px );
     }
 
     .form__input-weight {
-      width: calc( 610px - 75px - 80px );
+      width: calc( 610px - 58px - 80px );
     }
 
     .form__input-age {
-      width: calc( 610px - 75px - 120px );
+      width: calc( 610px - 58px - 120px );
     }
 
     /* Блок target */
@@ -574,21 +633,21 @@
     }
 
     .form__input-email {
-      width: calc( 610px - 80px - 65px );
+      width: calc( 610px - 60px - 65px );
     }
 
     .form__icon-email {
-      left: 525px;
+      left: 527px;
     }
 
     .form__pole--position {
       position: relative;
-      top: -79px;
+      top: -75px;
       left: 640px;
     }
 
     .form__input-tel {
-      width: calc( 610px - 95px - 65px );
+      width: calc( 610px - 75px - 65px );
     }
 
     .form__icon-phone {
@@ -597,7 +656,7 @@
 
     /* Блок contacts */
     .form__input-comment {
-      width: 98%;
+      width: 100%;
     }
 
     /* Блок additionally */

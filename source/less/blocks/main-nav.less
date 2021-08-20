@@ -23,17 +23,18 @@
     border-bottom: 1px solid #E6E6E6;
     justify-content: center;
     align-self: center;
+  }
 
-    :hover {
-      opacity: 0.6;
-      border-bottom: 2px solid #68B738;
-      margin-top: 2px;
-    }
+  .main-nav__item:hover {
+    opacity: 0.6;
+  }
 
-    :active {
-      opacity: 0.3;
-    }
+  .main-nav__item:active {
+    opacity: 0.3;
+  }
 
+  .main-nav__item-padding a {
+    padding-bottom: 4px;
   }
 
   // Граница первого пункта меню (только для режима mobile)
@@ -119,10 +120,6 @@
       margin-right: 20px;
     }
 
-    .main-nav__item--active {
-      border-bottom: 2px solid #ffffff;
-    }
-
     .main-nav__item  a {
       font-family: @base_font_regular;
       font-size: 20px;
@@ -135,6 +132,10 @@
 
     .main-nav__item-color a {
       color: #ffffff;
+    }
+
+    .main-nav__item--mobile a {
+      border-bottom: 2px solid #ffffff !important;
     }
 
   }

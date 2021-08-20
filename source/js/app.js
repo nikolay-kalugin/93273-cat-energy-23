@@ -17,7 +17,23 @@ for (let point of points) {
   if (point.href == document.location.href) {
     point.style.borderBottom = "2px solid #68B738";
     point.style.marginTop = "2px";
-    // point.style.paddingBottom = "3px";
   }
 
 }
+
+/* Настройки для input - begin */
+if (document.location.href == 'http://localhost:3000/form.html' || document.location.href == 'https://localhost:3000/form.html') {
+  document.querySelector('.form__input-weight').addEventListener('input',
+    function (e) {
+      this.value = this.value.replace(/[^\d.]/g, '');
+    }
+  )
+
+  document.querySelector('.form__input-age').addEventListener('input',
+    function (e) {
+      this.value = this.value.replace(/[^\d.]/g, '');
+    }
+  )
+
+}
+/* Настройки для input - end */
