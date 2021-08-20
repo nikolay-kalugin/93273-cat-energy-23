@@ -30,7 +30,6 @@
   .goods__info-item {
     display: flex;
     justify-content: space-between;
-
   }
 
   .goods__image {
@@ -116,6 +115,13 @@
     color: #444444;
   }
 
+  .goods__info-title-else br {
+    display: none;
+  }
+
+  .goods__info-text-else br {
+    display: none;
+  }
 
   /****************************************** Планшетный режим ****************************/
 
@@ -124,7 +130,7 @@
       width: 708px;
     }
 
-    .goods__list  {
+    .goods__list {
       display: grid;
       grid-template-columns: 46% 46%;
       grid-column-gap: 8%;
@@ -185,6 +191,61 @@
       line-height: 16px;
       color: #444444;
     }
+
+    .goods__card-else {
+      background-color: #ffffff;
+      border: 2px solid #D3D3D3;
+      box-sizing: border-box;
+    }
+
+    .goods__card-wrapper-else-style {
+      margin-top: 95px;
+    }
+
+    .goods__image-else img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .goods__info-text-else {
+      font-family: @base_font_regular_second;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 18px;
+      color: #444444;
+
+      margin-top: 30px;
+    }
+
+    .goods__info-text-else br {
+      display: block;
+    }
+
+  }
+
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .goods__wrapper {
+      width: 1220px;
+    }
+
+    .goods__list {
+      grid-template-columns: 20% 20% 20% 20%;
+      grid-column-gap: 6.7%;
+      padding-bottom: 50px;
+    }
+
+    .goods__card {
+      padding: 0 36px;
+    }
+
+    .goods__info-text-else br {
+      display: none;
+    }
+
 
   }
 
