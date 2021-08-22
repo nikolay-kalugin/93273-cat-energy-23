@@ -1,6 +1,11 @@
 .goods {
   background: #ffffff;
 
+  .goods__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
   .goods__list {
     margin: 0;
     padding: 0;
@@ -10,7 +15,27 @@
 
   .goods__card {
     border: 2px solid green;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: grid;
+    grid-template-rows: 150px  40px;
+  }
+
+  .goods__card-wrapper {
+    display: grid;
+    grid-template-columns: 50%  50%;
+  }
+
+  .goods__info-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .goods__image {
+    display: flex;
+    align-self: center;
+    justify-content: center;
   }
 
   .goods__info-title {
@@ -23,15 +48,11 @@
     color: #000000;
   }
 
-  .goods__parametr {
-    font-family: @base_font_regular_second;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 16px;
-    color: #444444;
+  .goods__info-title br:nth-child(2) {
+    display: none;
   }
 
+  .goods__parametr,
   .goods__value {
     font-family: @base_font_regular_second;
     font-size: 12px;
@@ -45,6 +66,10 @@
     background: #68B738;
     text-decoration: none;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-family: @base_font_regular;
     font-size: 16px;
     font-style: normal;
@@ -52,6 +77,14 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #ffffff;
+  }
+
+  .goods__button:hover {
+    background: #5EAA2F;
+  }
+
+  .goods__button:active {
+    color: #8EC36D;
   }
 
   .goods__info-text {
@@ -63,9 +96,23 @@
     color: #444444;
   }
 
+  .goods__card-wrapper-else {
+    grid-template-columns: 70px  20px  8px;
+    text-align: center;
+  }
+
+  .goods__image-else {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
   .goods__button-show-all {
     background: #f2f2f2;
     text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     font-family: @base_font_regular;
     font-size: 16px;
@@ -74,6 +121,155 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #444444;
+  }
+
+  .goods__button-show-all:hover {
+    background: #EBEBEB;
+  }
+
+  .goods__button-show-all:active {
+    color: #B9B9B9;
+  }
+
+  .goods__info-title-else br {
+    display: none;
+  }
+
+  .goods__info-text-else br {
+    display: none;
+  }
+
+  /****************************************** Планшетный режим ****************************/
+
+  @media ( min-width: @tablet-width ) {
+    .goods__wrapper {
+      width: 708px;
+    }
+
+    .goods__list {
+      display: grid;
+      grid-template-columns: 46% 46%;
+      grid-column-gap: 8%;
+    }
+
+    .goods__card {
+      background: #F2F2F2;
+      margin-top: 140px;
+      padding: 0 38px;
+      padding-bottom: 38px;
+      grid-template-rows: 390px  40px;
+    }
+
+    .goods__card-wrapper {
+      display: block;
+    }
+
+    .goods__image img {
+      position: relative;
+      top: -50px;
+    }
+
+    .goods__image--position img {
+      top: -75px;
+
+    }
+
+    .goods__info {
+      margin-top: -20px;
+    }
+
+    .goods__info--position {
+      margin-top: -55px;
+    }
+
+    .goods__info-title {
+      text-align: center;
+
+      font-family: @base_font_regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    .goods__info-title br:nth-child(1) {
+      display: none;
+    }
+
+    .goods__info-title br:nth-child(2) {
+      display: block;
+    }
+
+    .goods__info-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #CDCDCD;
+    }
+
+    .goods__parametr,
+    .goods__value {
+      font-family: @base_font_regular_second;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 16px;
+      color: #444444;
+    }
+
+    .goods__card-else {
+      background-color: #ffffff;
+      border: 2px solid #D3D3D3;
+      box-sizing: border-box;
+    }
+
+    .goods__card-wrapper-else-style {
+      margin-top: 95px;
+    }
+
+    .goods__image-else img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .goods__info-text-else {
+      font-family: @base_font_regular_second;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 18px;
+      color: #444444;
+
+      margin-top: 30px;
+    }
+
+    .goods__info-text-else br {
+      display: block;
+    }
+
+  }
+
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .goods__wrapper {
+      width: 1220px;
+    }
+
+    .goods__list {
+      grid-template-columns: 20% 20% 20% 20%;
+      grid-column-gap: 6.7%;
+      padding-bottom: 50px;
+    }
+
+    .goods__card {
+      padding: 0 36px;
+    }
+
+    .goods__info-text-else br {
+      display: none;
+    }
+
+
   }
 
 }

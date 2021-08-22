@@ -25,6 +25,19 @@
     align-self: center;
   }
 
+  .main-nav__item:hover {
+    opacity: 0.6;
+  }
+
+  .main-nav__item:active {
+    opacity: 0.3;
+  }
+
+  .main-nav__item-padding a {
+    padding-bottom: 4px;
+  }
+
+  // Граница первого пункта меню (только для режима mobile)
   .main-nav__item:first-child {
     border-top: 1px solid #E6E6E6;
   }
@@ -40,6 +53,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color:#000000;
+
   }
 
 
@@ -65,14 +79,18 @@
       height: 28px;
     }
 
+    // Убираем границу первого пункта меню, наследуемую от режима mobile
     .main-nav__item:first-child {
       border-top: none;
-      margin-top: 2px;
     }
 
+    // Добавляем подчерк для активного пункта
+    /*
     .main-nav__item--active {
-      border-bottom: 2px solid #68B738;;
+      border-bottom: 2px solid #68B738;
+      margin-top: 2px;
     }
+    */
 
     .main-nav__item  a {
       font-family: @base_font_regular;
@@ -102,19 +120,22 @@
       margin-right: 20px;
     }
 
-    .main-nav__item--active {
-      border-bottom: 2px solid #ffffff;;
-    }
-
     .main-nav__item  a {
       font-family: @base_font_regular;
       font-size: 20px;
       font-style: normal;
       font-weight: normal;
       line-height: 30px;
-      color: #ffffff;
 
       padding-bottom: 10px;
+    }
+
+    .main-nav__item-color a {
+      color: #ffffff;
+    }
+
+    .main-nav__item--mobile a {
+      border-bottom: 2px solid #ffffff !important;
     }
 
   }

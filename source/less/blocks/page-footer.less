@@ -58,6 +58,15 @@
     padding: 39px 0;
     text-align: center;
     border-bottom: 1px solid #D9D9D9;
+
+    :hover {
+      opacity: 0.8;
+    }
+
+    :active {
+      opacity: 0.6;
+    }
+
   }
 
   .page-footer__social {
@@ -93,11 +102,20 @@
   .page-footer__social-item-facebook {
     display: flex;
     align-items: center;
+
   }
 
   .page-footer__social-link {
     text-decoration: none;
+  }
 
+  .page-footer__social-link-icon:hover path {
+    fill: #68B738;
+  }
+
+  .page-footer__social-link-icon:active path {
+    fill: #68B738;
+    opacity: 0.3;
   }
 
   .page-footer__copyright {
@@ -110,6 +128,15 @@
   .page-footer__copyright-link-text {
     display: flex;
     align-self: center;
+
+    :hover {
+      opacity: 0.6;
+    }
+
+    :active {
+      opacity: 0.3;
+    }
+
   }
 
   .page-footer__copyright-link-text a {
@@ -121,6 +148,17 @@
     font-weight: normal;
     line-height: 18px;
     color: #444444;
+
+  }
+
+  .page-footer__copyright-link-logo-icon:hover   path {
+      fill: #68B738;
+      opacity: 0.6;
+  }
+
+  .page-footer__copyright-link-logo-icon:active   path {
+    fill: #68B738;
+    opacity: 0.3;
   }
 
 
@@ -178,17 +216,17 @@
       border: none;
     }
 
-    .page-footer__social-item-vk img {
+    .page-footer__social-item-vk svg {
       width: 30px;
       height: 22px;
     }
 
-    .page-footer__social-item-instagram img {
+    .page-footer__social-item-instagram svg {
       width: 23px;
       height: 23px;
     }
 
-    .page-footer__social-item-facebook img {
+    .page-footer__social-item-facebook svg {
       width: 28px;
       height: 33px;
     }

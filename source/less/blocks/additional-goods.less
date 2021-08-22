@@ -1,9 +1,11 @@
 .additional-goods {
+  display: block;
+  box-sizing: border-box;
   background: #ffffff;
   border: 2px solid blue;
 
   .additional-goods__wrapper {
-    width: 280px;
+    width: 277px;
     margin: 0 auto;
   }
 
@@ -11,14 +13,16 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-top: 30px;
   }
 
   .additional-goods__card {
+    box-sizing: border-box;
     border: 2px solid green;
-  }
 
-  .additional-goods__gift {
-    background: url("../img/background-images/catalog-gift-cat-mobile.png") no-repeat;
+    display: grid;
+    grid-template-rows: 35px  35px  40px;
+    margin-bottom: 18px;
   }
 
   .additional-goods__title {
@@ -40,18 +44,21 @@
     color: #222222;
   }
 
-  .additional-goods__info span {
+  .additional-goods__info {
     font-family: @base_font_regular_second;
     font-size: 14px;
     font-style: normal;
     font-weight: normal;
     line-height: 14px;
-    color: #444444
+    color: #444444;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .additional-goods__button {
     background: #68B738;
-    pointer-events: none;
     text-decoration: none;
 
     font-family: @base_font_regular;
@@ -61,11 +68,28 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #ffffff;
+
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .additional-goods__button:hover {
+    background: #5EAA2F;
+  }
+
+  .additional-goods__button:active {
+    color: #8EC36D;
   }
 
   .additional-goods__gift {
     border: 2px solid green;
+    box-sizing: border-box;
+    background: url("../img/background-images/catalog-gift-cat-mobile.png") no-repeat;
     height: 289px;
+    margin: 30px 0;
   }
 
   .additional-goods__gift-icon {
@@ -82,6 +106,153 @@
     color:#ffffff;
     text-align: center;
     margin: 20px 0;
+  }
+
+
+  /****************************************** Планшетный режим ****************************/
+
+  @media ( min-width: @tablet-width ) {
+    .additional-goods__wrapper {
+      width: 706px;
+    }
+
+    .additional-goods__title {
+      font-family: @base_font_regular;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 36px;
+    }
+
+    .additional-goods__card {
+      border: 1px solid #CDCDCD;
+      box-sizing: border-box;
+      padding: 20px 35px;
+      margin-bottom: -1px;
+    }
+
+    .additional-goods__info-title {
+      font-family: @base_font_regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+      color: #222222;
+    }
+
+    .additional-goods__info-count,
+    .additional-goods__info-price {
+      font-family: @base_font_regular_second;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+      color: #444444;
+    }
+
+    .additional-goods__info-count {
+      position: relative;
+      width: 140px;
+      text-align: right;
+      top: -19px;
+      left: 420px;
+    }
+
+    .additional-goods__info-price {
+      position: relative;
+      width: 50px;
+      text-align: right;
+      top: -19px;
+      left: 0px;
+    }
+
+    .additional-goods__gift {
+      background: url("../img/background-images/catalog-gift-cat-tablet.png") no-repeat;
+      height: 200px;
+      margin: 60px 0;
+    }
+
+    .additional-goods__gift-icon {
+      position: relative;
+      top: 10px;
+      left: -245px;
+    }
+
+    .additional-goods__gift-text {
+      position: relative;
+      top: -115px;
+      left: 410px;
+      text-align: left;
+    }
+
+  }
+
+
+  /****************************************** Десктопный режим ****************************/
+
+  @media ( min-width: @desctop-width ) {
+    .additional-goods__wrapper {
+      width: 1220px;
+      height: 490px;
+    }
+
+    .additional-goods__list {
+      width: 895px;
+      margin-top: 70px;
+    }
+
+    .additional-goods__card {
+      padding: 0;
+      border-left: none;
+      border-right: none;
+      height: 75px;
+    }
+
+    .additional-goods__info-title {
+      margin-top: 25px;
+    }
+
+    .additional-goods__info-count {
+      text-align: left;
+      top: -15px;
+      left: 325px;
+    }
+
+    .additional-goods__info-price {
+      text-align: left;
+      top: -15px;
+      left: -275px;
+    }
+
+    .additional-goods__button {
+      width: 245px;
+      position: relative;
+      top: -54px;
+      left: 650px;
+    }
+
+    .additional-goods__gift {
+      width: 255px;
+      background: url("../img/background-images/catalog-gift-cat-mobile.png") no-repeat;
+      height: 289px;
+      margin: 30px 0;
+      position: relative;
+      top: -322px;
+      left: 962px;
+    }
+
+    .additional-goods__gift-icon {
+      position: static;
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .additional-goods__gift-text {
+      position: static;
+      text-align: center;
+      margin: 20px 0;
+    }
+
   }
 
 }
