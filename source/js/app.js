@@ -1,4 +1,8 @@
-﻿// Анимация для значка бургер-меню
+﻿/* Анимация мобильного меню */
+
+// Если включен JS, скрываем мобильное меню
+document.querySelector(".main-nav").classList.add("page__block--hide");
+
 document.addEventListener("click", function (e) {
 
   if (e.target.className == "page-header__toggle-open" || e.target.className == "page-header__toggle-close") {
@@ -9,7 +13,7 @@ document.addEventListener("click", function (e) {
 
 });
 
-// Подчеркивание активного пункта меню
+/* Подчеркивание активного пункта меню */
 const points = document.querySelectorAll(".main-nav__list li a");
 
 for (let point of points) {

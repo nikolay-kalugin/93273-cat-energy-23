@@ -1,8 +1,8 @@
 .additional-goods {
   display: block;
-  box-sizing: border-box;
   background: #ffffff;
-  border: 2px solid blue;
+  box-sizing: border-box;
+  // border: 2px solid blue;
 
   .additional-goods__wrapper {
     width: 277px;
@@ -14,15 +14,14 @@
     padding: 0;
     list-style: none;
     margin-top: 30px;
+    border-bottom: 1px solid #CDCDCD;
   }
 
   .additional-goods__card {
-    box-sizing: border-box;
-    border: 2px solid green;
-
     display: grid;
     grid-template-rows: 35px  35px  40px;
     margin-bottom: 18px;
+    border-top: 1px solid #CDCDCD;
   }
 
   .additional-goods__title {
@@ -85,16 +84,17 @@
   }
 
   .additional-goods__gift {
-    border: 2px solid green;
     box-sizing: border-box;
     background: url("../img/background-images/catalog-gift-cat-mobile.png") no-repeat;
     height: 289px;
-    margin: 30px 0;
+    margin-top: -20px;
+    margin-bottom: 30px;
   }
 
   .additional-goods__gift-icon {
     text-align: center;
     margin: 50px 0;
+    padding-top: 50px;
   }
 
   .additional-goods__gift-text {
@@ -237,7 +237,7 @@
       height: 289px;
       margin: 30px 0;
       position: relative;
-      top: -322px;
+      top: -340px;
       left: 962px;
     }
 

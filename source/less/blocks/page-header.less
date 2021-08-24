@@ -1,6 +1,5 @@
 .page-header {
   background: #ffffff;
-  border: 2px solid red;
 
   .page-header__wrapper {
     display: flex;
@@ -35,6 +34,7 @@
   /****************************************** Планшетный режим ****************************/
 
   @media ( min-width: @tablet-width ) {
+
     .page-header__wrapper {
       width: 708px;
       min-height: 80px;
@@ -84,9 +84,14 @@
   }
 
 
-
 }
 
 .page-header--border {
   border-bottom: 1px solid #D9D9D9;
+}
+
+@media ( min-width: @tablet-width ) {
+  .page-header--border {
+    border-bottom: none;
+  }
 }
