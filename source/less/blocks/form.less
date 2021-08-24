@@ -26,10 +26,10 @@
 
   /* Блок name-weight-age */
   .form__block-name-weight-age {
-    // border: 2px solid blue;
     box-sizing: border-box;
     margin: 10px 0;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D9D9;
   }
 
   .form__label-name {
@@ -91,9 +91,10 @@
 
   /* Блок target */
   .form__block-target {
-    // border: 2px solid blue;
     box-sizing: border-box;
-    padding-bottom: 10px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D9D9;
   }
 
   .form__pole-target {
@@ -161,11 +162,25 @@
 
   /* Блок contacts */
   .form__block-contacts {
-    // border: 2px solid blue;
     box-sizing: border-box;
     margin-top: 20px;
     padding: 0;
     padding-top: 25px;
+    border: none;
+    border-top: 2px solid #68B738;
+  }
+
+  .form__legend {
+    font-family: @base_font_regular;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    color:#000000;
+  }
+
+  .form__legend-contacts {
+    width: 200px;
   }
 
   .form__label {
@@ -246,20 +261,16 @@
 
   /* Блок comment */
   .form__block-comment {
-    // border: 2px solid blue;
     box-sizing: border-box;
     margin-top: 20px;
     padding: 0;
     padding-top: 25px;
+    border: none;
+    border-top: 2px solid #68B738;
   }
 
-  .form__legend {
-    font-family: @base_font_regular;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 26px;
-    color:#000000;
+  .form__legend-comment {
+    width: 140px;
   }
 
   .form__input-comment {
@@ -270,10 +281,15 @@
 
   /* Блок additionally */
   .form__block-additionally {
-    // border: 2px solid blue;
     box-sizing: border-box;
     margin-top: 20px;
     padding: 15px 0;
+    border: none;
+    border-top: 2px solid #68B738;
+  }
+
+  .form__legend-additionally {
+    width: 160px;
   }
 
   .form__label-checkbox {
@@ -403,6 +419,7 @@
     .form__block-name-weight-age{
       margin: 30px 0;
       padding-bottom: 20px;
+      border: none;
     }
 
     .form__input-name,
@@ -437,7 +454,6 @@
 
     /* Блок target */
     .form__block-target {
-      // border: 2px solid blue;
       border: 1px solid #E7E7E7;
       padding-top: 5px;
       padding-bottom: 20px;
@@ -486,6 +502,10 @@
       padding-top: 50px;
     }
 
+    .form__legend-contacts {
+      width: 550px;
+    }
+
     .form__label-email {
       width: 65px;
     }
@@ -524,6 +544,10 @@
       padding-top: 60px;
     }
 
+    .form__legend-comment {
+      width: 220px;
+    }
+
     .form__input-comment {
       width: 619px;
       padding-top: 10px;
@@ -535,12 +559,12 @@
       position: absolute;
       top: 1450px;
       background-color: #ffffff;
+      width: 250px;
     }
 
     .form__block-additionally {
       margin-top: 50px;
       padding-top: 20px;
-
       display: grid;
       grid-template-columns: 50%  50%;
     }
