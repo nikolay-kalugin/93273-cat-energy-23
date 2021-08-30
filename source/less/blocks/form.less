@@ -58,8 +58,8 @@
   }
 
   .form__input:focus {
-    border: 2px solid #444444;
     box-sizing: border-box;
+    border: 2px solid #444444;
   }
 
   input:required:invalid {
@@ -86,6 +86,13 @@
 
   .form__input-age {
     width: calc( 280px - 18px - 95px );
+  }
+
+  // Убираем дёрганье полей
+  .form__input-name:focus,
+  .form__input-weight:focus,
+  .form__input-age:focus  {
+    padding-left: 9px;
   }
 
   /* Блок target */
@@ -220,6 +227,12 @@
     padding-left: 10px;
   }
 
+  // Убираем дёрганье полей
+  .form__input-email:focus,
+  .form__input-tel:focus {
+    padding-left: 9px;
+  }
+
   .form__input-email:focus + .form__icon-email svg path,
   .form__input-email:focus + .form__icon-email svg line {
     stroke:#68B738;
@@ -273,9 +286,22 @@
   }
 
   .form__input-comment {
+    width: 98%;
+    height: 150px;
     border: 1px solid #CDCDCD;
     padding-top: 10px;
     padding-left: 10px;
+  }
+
+  .form__input-comment:hover {
+    border: 1px solid #BABABA;
+  }
+
+  .form__input-comment:focus {
+    box-sizing: border-box;
+    border: 2px solid #444444;
+    padding-left: 9px;
+    padding-top: 9px;
   }
 
   /* Блок additionally */
@@ -525,6 +551,12 @@
       width: calc( 628px - 25px - 85px );
     }
 
+    // Убираем дёрганье полей
+    .form__input-email:focus,
+    .form__input-tel:focus {
+      padding-left: 14px;
+    }
+
     .form__icon-email {
       top: -37px;
       left: 582px;
@@ -549,6 +581,11 @@
       width: 619px;
       padding-top: 10px;
       padding-left: 20px;
+    }
+
+    .form__input-comment:focus {
+      padding-left: 19px;
+      padding-top: 9px;
     }
 
     /* Блок additionally */
