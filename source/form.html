@@ -47,9 +47,9 @@
       <!-- toggler -->
       <div class="page-header__toggle">
         <img class="page-header__toggle-open" src="img/icons/icon_toggler_open.svg" width="22" height="16"
-          alt="Иконка открыть меню">
+          alt="icon toggler open">
         <img class="page-header__toggle-close  page__block--hide" src="img/icons/icon_toggler_close.svg" width="22"
-          height="20" alt="Иконка закрыть меню">
+          height="20" alt="icon toggler close">
       </div>
 
       <!-- Navigation -->
@@ -60,7 +60,6 @@
           <!-- list -->
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item-padding">
-              <!-- main-nav__item--active -->
               <a href="index.html">
                 Главная
               </a>
@@ -117,21 +116,21 @@
 
             <div class="form__pole">
               <label class="form__label ">
-                <div class="form__label-name">Имя:*</div>
+                <span class="form__label-name">Имя:*</span>
                 <input class="form__input  form__input-name" type="text" name="name" required="required" value="Барсик">
               </label>
             </div>
 
             <div class="form__pole">
               <label class="form__label">
-                <div class="form__label-weight">Вес (кг):*</div>
+                <span class="form__label-weight">Вес (кг):*</span>
                 <input class="form__input  form__input-weight" type="text" name="weight" required="required" value="7">
               </label>
             </div>
 
             <div class="form__pole">
               <label class="form__label">
-                <div class="form__label-age">Возраст (лет):</div>
+                <span class="form__label-age">Возраст (лет):</span>
                 <input class="form__input  form__input-age" type="text" name="age" value="7">
               </label>
             </div>
@@ -147,7 +146,7 @@
               <label class="form__label  form__label-target">
                 <input class="form__input  form__input-target" name="target" type="radio" value="weight_loss" checked>
                 <span class="new_radio"></span>
-                <div class="form__label-weight-loss">Похудение</div>
+                <span class="form__label-weight-loss">Похудение</span>
               </label>
             </div>
 
@@ -155,7 +154,7 @@
               <label class="form__label  form__label-target">
                 <input class="form__input  form__input-target" name="target" type="radio" value="weight_gain">
                 <span class="new_radio"></span>
-                <div class="form__label-weight-gain">Набор массы</div>
+                <span class="form__label-weight-gain">Набор массы</span>
               </label>
             </div>
 
@@ -163,7 +162,7 @@
               <label class="form__label  form__label-target">
                 <input class="form__input  form__input-target" name="target" type="radio" value="need_advice">
                 <span class="new_radio"></span>
-                <div class="form__label-need-advice">Не знаю (Нужен ваш совет)</div>
+                <span class="form__label-need-advice">Не знаю (Нужен ваш совет)</span>
               </label>
             </div>
 
@@ -177,10 +176,10 @@
 
             <div class="form__pole">
               <label class="form__label">
-                <div class="form__label-email">E-mail:*</div>
+                <span class="form__label-email">E-mail:*</span>
                 <input class="form__input  form__input-email" type="email" name="email" required="required"
                   value="kuklachev@gmail.com">
-                <div class="form__icon-email">
+                <span class="form__icon-email">
                   <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="1.65" y1="5.84766" x2="1.65" y2="13.8477" stroke="#222222" stroke-width="1.3" />
                     <line x1="18.65" y1="5.84766" x2="18.65" y2="13.8477" stroke="#222222" stroke-width="1.3" />
@@ -189,16 +188,16 @@
                     <path d="M18.35 3.02975L10 9.5242L1.65 3.02975V1.49766H4.5L10 1.49766H15H18.35V3.02975Z"
                       stroke="#222222" stroke-width="1.3" />
                   </svg>
-                </div>
+                </span>
               </label>
             </div>
 
             <div class="form__pole  form__pole--position">
               <label class="form__label">
-                <div class="form__label-tel">Телефон:*</div>
+                <span class="form__label-tel">Телефон:*</span>
                 <input class="form__input  form__input-tel" type="tel" name="tel"
                   pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="required" value="8-960-900-60-90">
-                <div class="form__icon-phone">
+                <span class="form__icon-phone">
                   <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
                       <path
@@ -214,7 +213,7 @@
                       </clipPath>
                     </defs>
                   </svg>
-                </div>
+                </span>
               </label>
             </div>
 
@@ -240,7 +239,7 @@
                 <input class="form__input  form__input-checkbox" name="checkbox_no_sugar" type="checkbox"
                   value="no_sugar" checked>
                 <span class="new_checkbox"></span>
-                <div class="form__label-no-sugar">Сахарозаменитель</div>
+                <span class="form__label-no-sugar">Сахарозаменитель</span>
               </label>
             </div>
 
@@ -248,7 +247,7 @@
               <label class="form__label  form__label-checkbox">
                 <input class="form__input  form__input-checkbox" name="checkbox_water" type="checkbox" value="water">
                 <span class="new_checkbox"></span>
-                <div class="form__label-water">Питьевая вода</div>
+                <span class="form__label-water">Питьевая вода</span>
               </label>
             </div>
 
@@ -256,7 +255,7 @@
               <label class="form__label  form__label-checkbox">
                 <input class="form__input  form__input-checkbox" name="checkbox_milk" type="checkbox" value="milk">
                 <span class="new_checkbox"></span>
-                <div class="form__label-milk">Молоко</div>
+                <span class="form__label-milk">Молоко</span>
               </label>
             </div>
 
@@ -265,7 +264,7 @@
                 <input class="form__input  form__input-checkbox" name="checkbox_vitamins" type="checkbox"
                   value="vitamins">
                 <span class="new_checkbox"></span>
-                <div class="form__label-vitamins">Витамины</div>
+                <span class="form__label-vitamins">Витамины</span>
               </label>
             </div>
 
@@ -307,7 +306,9 @@
           <p>Приглашаем<br>к сотрудничеству<br>дилеров!</p>
         </div>
         <div class="page-footer__contacts-text">
-          <p>ул. Большая<br>Конюшенная, д. 19/8<br><span class="page-footer__contacts-text-city">Санкт-Петербург<span>
+          <p>
+            ул. Большая<br>Конюшенная, д. 19/8<br>
+            <span class="page-footer__contacts-text-city">Санкт-Петербург</span>
           </p>
         </div>
       </div>
@@ -318,7 +319,7 @@
     <div class="page-footer__contacts-maps">
 
       <div class="page-footer__maps-marker">
-        <img src="img/icons/icon_map_marker.svg" width="57" height="53" alt="маркер для maps">
+        <img src="img/icons/icon_map_marker.svg" width="57" height="53" alt="map icon marker">
       </div>
 
       <iframe
