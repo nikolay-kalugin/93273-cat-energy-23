@@ -115,21 +115,21 @@
           <div class="form__block-name-weight-age">
 
             <div class="form__pole">
-              <label class="form__label ">
+              <label class="form__label" aria-label="Поле Имя">
                 <span class="form__label-name">Имя:*</span>
                 <input class="form__input  form__input-name" type="text" name="name" required="required" value="Барсик">
               </label>
             </div>
 
             <div class="form__pole">
-              <label class="form__label">
+              <label class="form__label" aria-label="Поле Вес">
                 <span class="form__label-weight">Вес (кг):*</span>
                 <input class="form__input  form__input-weight" type="text" name="weight" required="required" value="7">
               </label>
             </div>
 
             <div class="form__pole">
-              <label class="form__label">
+              <label class="form__label" aria-label="Поле Возраст">
                 <span class="form__label-age">Возраст (лет):</span>
                 <input class="form__input  form__input-age" type="text" name="age" value="7">
               </label>
@@ -143,7 +143,7 @@
           <div class="form__block-target">
 
             <div class="form__pole  form__pole-target">
-              <label class="form__label  form__label-target">
+              <label class="form__label  form__label-target" aria-label="Переключатель Цель - Похудение">
                 <input class="form__input  form__input-target" name="target" type="radio" value="weight_loss" checked>
                 <span class="new_radio"></span>
                 <span class="form__label-weight-loss">Похудение</span>
@@ -151,7 +151,7 @@
             </div>
 
             <div class="form__pole  form__pole-target">
-              <label class="form__label  form__label-target">
+              <label class="form__label  form__label-target" aria-label="Переключатель Цель - Набор массы">
                 <input class="form__input  form__input-target" name="target" type="radio" value="weight_gain">
                 <span class="new_radio"></span>
                 <span class="form__label-weight-gain">Набор массы</span>
@@ -159,7 +159,8 @@
             </div>
 
             <div class="form__pole  form__pole-target">
-              <label class="form__label  form__label-target">
+              <label class="form__label  form__label-target"
+                aria-label="Переключатель Цель - Не знаю (Нужен ваш совет)">
                 <input class="form__input  form__input-target" name="target" type="radio" value="need_advice">
                 <span class="new_radio"></span>
                 <span class="form__label-need-advice">Не знаю (Нужен ваш совет)</span>
@@ -175,7 +176,7 @@
             <legend class="form__legend  form__legend-contacts">Контактные данные<br> (владельца кота)</legend>
 
             <div class="form__pole">
-              <label class="form__label">
+              <label class="form__label" aria-label="Поле E-mail">
                 <span class="form__label-email">E-mail:*</span>
                 <input class="form__input  form__input-email" type="email" name="email" required="required"
                   value="kuklachev@gmail.com">
@@ -193,7 +194,7 @@
             </div>
 
             <div class="form__pole  form__pole--position">
-              <label class="form__label">
+              <label class="form__label" aria-label="Поле Телефон">
                 <span class="form__label-tel">Телефон:*</span>
                 <input class="form__input  form__input-tel" type="tel" name="tel"
                   pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="required" value="8-960-900-60-90">
@@ -224,8 +225,8 @@
             <legend class="form__legend  form__legend-comment">Комментарий</legend>
 
             <div class="form__pole">
-              <textarea class="form__input  form__input-comment" name="comment" rows="6"
-                cols="33">Расскажите обо всех повадках кота</textarea>
+              <textarea class="form__input  form__input-comment" name="comment" rows="6" cols="33"
+                aria-label="Поле Комментарий">Расскажите обо всех повадках кота</textarea>
             </div>
 
           </fieldset>
@@ -235,7 +236,7 @@
             <legend class="form__legend  form__legend-additionally">Дополнительно</legend>
 
             <div class="form__pole">
-              <label class="form__label  form__label-checkbox">
+              <label class="form__label  form__label-checkbox" aria-label="Чекбокс Сахарозаменитель">
                 <input class="form__input  form__input-checkbox" name="checkbox_no_sugar" type="checkbox"
                   value="no_sugar" checked>
                 <span class="new_checkbox"></span>
@@ -244,7 +245,7 @@
             </div>
 
             <div class="form__pole">
-              <label class="form__label  form__label-checkbox">
+              <label class="form__label  form__label-checkbox" aria-label="Чекбокс Питьевая вода">
                 <input class="form__input  form__input-checkbox" name="checkbox_water" type="checkbox" value="water">
                 <span class="new_checkbox"></span>
                 <span class="form__label-water">Питьевая вода</span>
@@ -252,7 +253,7 @@
             </div>
 
             <div class="form__pole">
-              <label class="form__label  form__label-checkbox">
+              <label class="form__label  form__label-checkbox" aria-label="Чекбокс Молоко">
                 <input class="form__input  form__input-checkbox" name="checkbox_milk" type="checkbox" value="milk">
                 <span class="new_checkbox"></span>
                 <span class="form__label-milk">Молоко</span>
@@ -260,7 +261,7 @@
             </div>
 
             <div class="form__pole">
-              <label class="form__label  form__label-checkbox">
+              <label class="form__label  form__label-checkbox" aria-label="Чекбокс Витамины">
                 <input class="form__input  form__input-checkbox" name="checkbox_vitamins" type="checkbox"
                   value="vitamins">
                 <span class="new_checkbox"></span>
@@ -274,7 +275,7 @@
           <div class="form__submit">
 
             <div class="form__submit-button">
-              <input type="submit" value="Отправить заявку">
+              <input type="submit" value="Отправить заявку" aria-label="Кнопка Отправить заявку">
             </div>
 
             <!--  required-fields-text  -->
@@ -322,7 +323,7 @@
         <img src="img/icons/icon_map_marker.svg" width="57" height="53" alt="map icon marker">
       </div>
 
-      <iframe
+      <iframe aria-label="Карта"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627138202653!5m2!1sru!2sru"
         width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
       </iframe>
@@ -348,7 +349,8 @@
 
             <!-- vk.com -->
             <div class="page-footer__social-item-vk">
-              <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
+              <a class="page-footer__social-link" href="https://vk.com/htmlacademy"
+                aria-label="Перейти на страницу vk.com">
                 <svg class="page-footer__social-link-icon" width="23" height="13" viewBox="0 0 23 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -360,7 +362,8 @@
 
             <!-- instagram -->
             <div class="page-footer__social-item-instagram">
-              <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
+              <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy"
+                aria-label="Перейти на страницу instagram">
                 <svg class="page-footer__social-link-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -372,7 +375,8 @@
 
             <!-- facebook -->
             <div class="page-footer__social-item-facebook">
-              <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
+              <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy"
+                aria-label="Перейти на страницу facebook">
                 <svg class="page-footer__social-link-icon  page-footer__copyright-link-logo-icon-facebook" width="22"
                   height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -397,7 +401,7 @@
 
           <!-- Copyright link logo -->
           <div class="page-footer__copyright-link-logo">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
+            <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на страницу HTML Academy">
               <svg class="page-footer__copyright-link-logo-icon" width="27" height="34" viewBox="0 0 27 34" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
