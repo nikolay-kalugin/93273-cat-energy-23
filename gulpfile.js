@@ -185,6 +185,21 @@ exports.create_build_for_mentor = gulp.series(
 
 );
 
+exports.create_build_for_mentor_and_run_server = gulp.series(
+  clean,
+  copy_fonts_and_favicons,
+  opt_img,
+  gulp.parallel(
+    min_styles,
+    min_html,
+    min_js,
+    create_webp,
+    create_sprite,
+  ),
+  run_my_server,
+
+);
+
 // без оптимизации изображений + запуск сервера
 exports.create_build_for_me = gulp.series(
   clean,
