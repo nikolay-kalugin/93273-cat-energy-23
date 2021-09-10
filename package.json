@@ -31,8 +31,8 @@
     "build_old": "gulp styles",
     "create_build_for_mentor": "gulp create_build_for_mentor",
     "create_build_for_me": "gulp create_build_for_me",
-    "start__": "gulp create_build_for_me",
-    "start": "gulp"
+    "start": "gulp create_build_for_me",
+    "start____": "gulp"
   },
   "browserslist": [
     "last 2 versions",

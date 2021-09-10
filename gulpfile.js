@@ -133,6 +133,15 @@ const create_webp = () => {
 }
 exports.create_webp = create_webp;
 
+//  Create Sprite
+const create_sprite = () => {
+  return gulp.src("source/img/logos/**/*.svg")
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename("sprite_logos.svg"))
+    .pipe(gulp.dest("build/img"))
+}
+exports.create_sprite = create_sprite;
+
 //  Очистка build перед копированием
 const clean = () => {
   return del("build")
@@ -171,6 +180,7 @@ exports.create_build_for_mentor = gulp.series(
     min_html,
     min_js,
     create_webp,
+    create_sprite,
   ),
 
 );
@@ -185,6 +195,7 @@ exports.create_build_for_me = gulp.series(
     min_html,
     min_js,
     create_webp,
+    create_sprite,
   ),
   run_my_server,
 );
