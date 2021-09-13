@@ -19,6 +19,8 @@ const sync = require("browser-sync").create();
 
 /*************************** DEFAULT **************************/
 
+/* BACKUP DEFAULT SETTINGS - begin */
+/*
 // Task Styles
 const styles = () => {
   return gulp.src("source/less/style.less")
@@ -38,7 +40,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'source' // 'source'
     },
     cors: true,
     notify: false,
@@ -48,16 +50,45 @@ const server = (done) => {
 }
 exports.server = server;
 
-// Watchers
-const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-}
+*/
 
+// Watchers
+//const watcher = () => {
+//gulp.watch("source/less/**/*.less", gulp.series("styles"));
+//gulp.watch("source/*.html").on("change", sync.reload);
+//}
+
+/*
 // Commands
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+*/
+
+/* BACKUP DEFAULT SETTINGS - end*/
+
+
+
+
+
+
+/****************************** MY_SETTIGS ******************************/
+
+// Task Styles
+const styles = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(sync.stream());
+}
+exports.styles = styles;
 
 
 
@@ -148,8 +179,65 @@ const clean = () => {
 }
 exports.clean = clean;
 
+/***********************/
+
+// Run Server
+const server = (done) => {
+  sync.init({
+    server: {
+      baseDir: 'build' // 'source'
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
+}
+exports.server = server;
 
 
+/*** Commands ***/
+
+exports.create_build_for_mentor = gulp.series(
+  clean,
+  copy_fonts_and_favicons,
+  opt_img,
+  gulp.parallel(
+    min_styles,
+    min_html,
+    min_js,
+    create_webp,
+    create_sprite,
+  ),
+);
+
+
+
+exports.default = gulp.series(
+  clean,
+  copy_fonts_and_favicons,
+  opt_img,
+  gulp.parallel(
+    min_styles,
+    min_html,
+    min_js,
+    create_webp,
+    create_sprite,
+  ),
+  server
+);
+
+
+
+
+
+
+
+
+
+/* BACKUP CUSTOM  SETTINGS V1 - begin */
+
+/*
 // Run My Server
 const run_my_server = (done) => {
   sync.init({
@@ -163,7 +251,7 @@ const run_my_server = (done) => {
   done();
 }
 exports.run_my_server = run_my_server;
-
+*/
 
 // Set Watchers
 
@@ -171,6 +259,7 @@ exports.run_my_server = run_my_server;
 /* Create Build */
 
 // с оптимизацией изображений
+/*
 exports.create_build_for_mentor = gulp.series(
   clean,
   copy_fonts_and_favicons,
@@ -182,9 +271,11 @@ exports.create_build_for_mentor = gulp.series(
     create_webp,
     create_sprite,
   ),
-
 );
+*/
 
+
+/*
 exports.create_build_for_mentor_and_run_server = gulp.series(
   clean,
   copy_fonts_and_favicons,
@@ -199,8 +290,11 @@ exports.create_build_for_mentor_and_run_server = gulp.series(
   run_my_server,
 
 );
+*/
+
 
 // без оптимизации изображений + запуск сервера
+/*
 exports.create_build_for_me = gulp.series(
   clean,
   copy_fonts_and_favicons,
@@ -214,6 +308,6 @@ exports.create_build_for_me = gulp.series(
   ),
   run_my_server,
 );
+*/
 
-
-
+/* BACKUP CUSTOM  SETTINGS V1 - end */
