@@ -1,14 +1,14 @@
 ﻿/* Анимация мобильного меню */
 
 // Если включен JS, скрываем мобильное меню
-document.querySelector(".main-nav").classList.add("page__block--hide");
+document.querySelector(".main-nav").classList.add("visually-hidden");
 
 document.addEventListener("click", function (e) {
 
   if (e.target.className == "page-header__toggle-open" || e.target.className == "page-header__toggle-close") {
-    document.querySelector(".page-header__toggle-open").classList.toggle("page__block--hide");
-    document.querySelector(".page-header__toggle-close").classList.toggle("page__block--hide");
-    document.querySelector(".main-nav").classList.toggle("page__block--hide");
+    document.querySelector(".page-header__toggle-open").classList.toggle("visually-hidden");
+    document.querySelector(".page-header__toggle-close").classList.toggle("visually-hidden");
+    document.querySelector(".main-nav").classList.toggle("visually-hidden");
   }
 
 });
